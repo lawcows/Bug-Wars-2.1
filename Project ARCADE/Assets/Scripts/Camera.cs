@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
+    [SerializeField] Transform cameraGO;
+    public float cameraSpeed;
     void Start()
     {
         
@@ -11,6 +13,6 @@ public class Camera : MonoBehaviour
 
     void Update()
     {
-
+        cameraGO.position = new Vector3 (cameraGO.position.x, cameraGO.transform.position.y, cameraGO.transform.position.z + cameraSpeed*0.01f);
     }
 }
