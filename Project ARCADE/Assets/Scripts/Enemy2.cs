@@ -18,7 +18,7 @@ public float bulletDamage= 30;
 private void Update() {
     float t = Time.deltaTime;
     Vector3 target = chasePlayer.transform.position - transform.position;
-    transform.Translate(target*enemySpeed*t);
+    transform.Translate(target.normalized*enemySpeed*t);
     ShootPlayer();
 }
 
