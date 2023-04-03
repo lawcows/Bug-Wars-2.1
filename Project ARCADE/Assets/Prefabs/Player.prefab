@@ -147,6 +147,7 @@ MonoBehaviour:
   bullet: {fileID: 2301967408342695997, guid: 8cf3287fbffcecc40b528722120d0cc2, type: 3}
   bulletSpawner: {fileID: 3813353709258288952}
   fireRate: 1
+  canfire: 1
 --- !u!114 &3813353709638694142
 MonoBehaviour:
   m_ObjectHideFlags: 0

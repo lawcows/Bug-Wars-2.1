@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpeed: 3
-  screamSE: {fileID: 0}
+  screamSE: {fileID: 1984076544}
   enemy1HP: 100
   bulletDamage: 30
 --- !u!82 &1984076544
