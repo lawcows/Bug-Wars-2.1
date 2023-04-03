@@ -2419,6 +2419,14 @@ PrefabInstance:
       propertyPath: fireRate
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7774176003655689112, guid: a032a364482f04f4a89db9f0149f226e, type: 3}
+      propertyPath: playerTr
+      value: 
+      objectReference: {fileID: 513811143}
+    - target: {fileID: 7774176003655689112, guid: a032a364482f04f4a89db9f0149f226e, type: 3}
+      propertyPath: enemySpeed
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a032a364482f04f4a89db9f0149f226e, type: 3}
 --- !u!1001 &3813353710072913853
