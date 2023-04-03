@@ -8,16 +8,17 @@ public class Enemy2 : MonoBehaviour
 public float enemySpeed = 0.2f;
 public GameObject bullet;
 public Transform bulletSpawner;
-public Transform playerTr;
+public Transform chasePlayer; 
 Vector3 enemyMoveX = new Vector3 (1,0,0);
 Vector3 enemyMoveZ = new Vector3 (0,0,-0.5f);
 float nextShot;
 public float fireRate;
 public float enemy1HP = 100;
 public float bulletDamage= 30;
+float t = Time.deltaTime;
 private void Update() {
-    Vector3 chasePlayer = playerTr.transform.position - transform.position;
-    transform.Translate(chasePlayer*enemySpeed*Time.deltaTime);
+    Vector3 target = chasePlayer.transform.position - transform.position;
+    transform.Translate(target*enemySpeed*t);
     ShootPlayer();
 }
 
