@@ -5,11 +5,11 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 
-    public Vector3 direction = new Vector3 (1, 0, 0);
+    public Vector3 direction;
     public float speed = 8;
     static public float bullet1Damage = 30;
 
-    public Vector3 velocity;
+    Vector3 velocity;
 
     void Start()
     {

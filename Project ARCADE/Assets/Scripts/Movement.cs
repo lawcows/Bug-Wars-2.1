@@ -31,7 +31,7 @@ public class Movement : MonoBehaviour
 
         if (y != 0 || x != 0)
         {
-            transform.Translate(x * speed * Time.deltaTime, y * speed * Time.deltaTime, 0);
+            transform.Translate(x * speed * Time.deltaTime, 0, y * speed * Time.deltaTime);
         }
 
  
