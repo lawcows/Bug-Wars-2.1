@@ -10,6 +10,7 @@ public class Shoot: MonoBehaviour
     float nextTimeToShoot;
     public float fireRate = 1;
     public bool canfire = true;
+    public AudioSource shootSound;
 
     private void Start() {
 
@@ -35,6 +36,7 @@ public void Update()
             Destroy(temporaryBall, 5f);
             nextTimeToShoot = Time.time;
             StartCoroutine(FireRateHandler());
+            shootSound.GetComponent<AudioSource>().Play();
             yield return null;
     }
     IEnumerator FireRateHandler()
