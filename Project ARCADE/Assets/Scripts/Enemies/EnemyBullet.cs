@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
 
-    public Vector3 direction = new Vector3 (-1, 0, 0);
+    public Vector3 direction = new Vector3 (0, 0, 0);
     public float speed = 8;
     static public float bullet1Damage = 30;
 
