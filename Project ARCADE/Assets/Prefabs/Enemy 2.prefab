@@ -131,6 +131,7 @@ MonoBehaviour:
   enemySpeed: 0.2
   bullet: {fileID: 302901596789098868, guid: 48b05e7557033aa40a399a9db30d74b3, type: 3}
   bulletSpawner: {fileID: 1261864628436891081}
+  chasePlayer: {fileID: 0}
   fireRate: 3
   enemy1HP: 100
   bulletDamage: 30
@@ -158,7 +159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7207149332849119423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.38}
+  m_LocalPosition: {x: -0.61, y: 0, z: -0.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
