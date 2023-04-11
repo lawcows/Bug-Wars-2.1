@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &160421622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5509913189837678829, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+  m_PrefabInstance: {fileID: 7876699984755848837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &286722743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2353278774107937648, guid: 0936231c54cfb394d97518a6a38272cd, type: 3}
@@ -1390,7 +1395,7 @@ PrefabInstance:
     - target: {fileID: 7774176003655689112, guid: a032a364482f04f4a89db9f0149f226e, type: 3}
       propertyPath: chasePlayer
       value: 
-      objectReference: {fileID: 5509913189837678829, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      objectReference: {fileID: 160421622}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a032a364482f04f4a89db9f0149f226e, type: 3}
 --- !u!1001 &7876699984755848837
