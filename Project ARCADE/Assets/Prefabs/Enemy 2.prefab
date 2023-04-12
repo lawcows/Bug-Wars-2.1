@@ -128,10 +128,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1dee97480a2d1347a1f180cb0a81a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 0.2
+  enemySpeed: 3
   bullet: {fileID: 302901596789098868, guid: 48b05e7557033aa40a399a9db30d74b3, type: 3}
   bulletSpawner: {fileID: 1261864628436891081}
-  chasePlayer: {fileID: 0}
+  chasePlayer: {fileID: 5509913189837678829, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
   fireRate: 3
   enemy1HP: 100
   bulletDamage: 30
