@@ -1,0 +1,27 @@
+using UnityEngine;
+
+public class ParallaxBackground : MonoBehaviour
+{
+    public float parallaxFactor = 0.5f; // Fator de parallax para controlar a velocidade de movimento
+    private Transform cam; // Referência à câmera
+    private Vector3 previousCamPosition; // Posição anterior da câmera
+
+    private void Start()
+    {
+        cam = Camera.main.transform;
+        previousCamPosition = cam.position;
+    }
+
+    private void Update()
+    {
+        // Calcula a diferença entre a posição atual da câmera e a posição anterior da câmera
+        Vector3 parallax = (previousCamPosition - cam.position) * parallaxFactor;
+        Vector3 newPosition = transform.position + parallax;
+
+        // Define a nova posição do objeto
+        transform.position = newPosition;
+
+        // Atualiza a posição anterior da câmera
+        previousCamPosition = cam.position;
+    }
+}
