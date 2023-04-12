@@ -128,8 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a74d958829b8846976f4678dfef1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 3
+  explosionPS: {fileID: 2147072013540284581, guid: cfebe3d0f238f0c43b3a179661ee9266, type: 3}
   screamSE: {fileID: 1984076544}
+  enemySpeed: 3
   enemy1HP: 100
   bulletDamage: 30
 --- !u!82 &1984076544
