@@ -8,15 +8,20 @@ public class Enemy2 : MonoBehaviour
     public float enemySpeed = 0.2f;
     public GameObject bullet;
     public Transform bulletSpawner;
-    public Transform chasePlayer; 
+    private Transform playerTransform; 
     Vector3 enemyMoveX = new Vector3 (1,0,0);
     Vector3 enemyMoveZ = new Vector3 (0,0,-0.5f);
     float nextShot;
     public float fireRate;
     public float enemy1HP = 100;
     public float bulletDamage= 30;
+
+    private void Start() {
+        playerTransform = GameObject.Find("Player").GetComponent<Transform>();
+    }
+
     private void Update() {
-        transform.position = Vector3.MoveTowards(transform.position, chasePlayer.position, enemySpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, enemySpeed * Time.deltaTime);
         ShootPlayer();
     }
 
