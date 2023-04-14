@@ -131,6 +131,7 @@ MonoBehaviour:
   enemySpeed: 2
   bullet: {fileID: 302901596789098868, guid: 48b05e7557033aa40a399a9db30d74b3, type: 3}
   bulletSpawner: {fileID: 1261864628436891081}
+  explosionPS: {fileID: 2147072013540284581, guid: cea0d8301cea236429fbec07f88a6bc8, type: 3}
   fireRate: 3
   enemy1HP: 100
   bulletDamage: 30

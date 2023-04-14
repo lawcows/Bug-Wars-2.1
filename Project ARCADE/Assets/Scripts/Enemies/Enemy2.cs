@@ -51,7 +51,7 @@ public class Enemy2 : MonoBehaviour
         }
         IEnumerator Die()
         {
-            yield return  new WaitForSeconds(2);
+            yield return  new WaitForSeconds(1);
             Destroy(gameObject);
 
         }
