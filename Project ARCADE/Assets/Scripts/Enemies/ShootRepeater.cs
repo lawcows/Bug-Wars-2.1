@@ -33,7 +33,7 @@ public class ShootRepeater : MonoBehaviour
         temporaryBallRB.AddForce(bulletSpawner.transform.forward);
         Destroy(temporaryBall, 5f);
         nextTimeToShoot = Time.time;
-        StartCoroutine(FireRateHandler());
+        
     
         yield return null;
 
