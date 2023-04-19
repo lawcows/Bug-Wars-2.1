@@ -22,6 +22,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    //Retorna ao jogo    
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -29,6 +30,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
+    //Pausa o jogo
     void Pause()
     {
         pauseMenuUI.SetActive(true);
@@ -36,11 +38,13 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    //Carrega Menu inicial
     public void LoadMenu()
     {
         SceneManager.LoadScene(0);
     }
 
+    //Fecha o jogo
     public void QuitGame()
     {
         Application.Quit();
