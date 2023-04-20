@@ -546,7 +546,7 @@ MonoBehaviour:
   - {fileID: 33364968}
   - {fileID: 2129009429}
   - {fileID: 2137718166}
-  spawnInterval: 2
+  spawnInterval: 5
 --- !u!4 &423426332
 Transform:
   m_ObjectHideFlags: 0

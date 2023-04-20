@@ -22,22 +22,10 @@ public class Enemy2 : MonoBehaviour
 
     private void Update() {
         transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, enemySpeed * Time.deltaTime);
-        ShootPlayer();
+
     }
 
-    private void ShootPlayer()
-    {
-        if(Time.time > nextShot)
-        {
-            nextShot = Time.time + fireRate;
-            GameObject temporaryBall;
-            temporaryBall = Instantiate(bullet, bulletSpawner.transform.position, bullet.transform.rotation) as GameObject;
-            Rigidbody temporaryBallRB;
-            temporaryBallRB = temporaryBall.GetComponent<Rigidbody>();
-            temporaryBallRB.AddForce(bulletSpawner.transform.forward);   
-            Destroy(temporaryBall, 5f);
-        }
-    }
+
 
     private void OnCollisionEnter(Collision other) {
         GetHitted();
