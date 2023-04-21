@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
 
     public ParticleSystem explosionPS;
     public AudioSource screamSE;
+    public Bullet bulletScript;
 
 
     public float enemySpeed;
@@ -28,7 +29,7 @@ public class Enemy : MonoBehaviour
     }
     void GetHitted()
     {
-        enemy1HP = enemy1HP - Bullet.bullet1Damage;
+        enemy1HP = enemy1HP - bulletScript.bullet1Damage;
         screamSE.GetComponent<AudioSource>().Play();
         ParticleSystem tExplosion = Instantiate(explosionPS, transform.position, Quaternion.identity);
         StartCoroutine(DestroyPS());

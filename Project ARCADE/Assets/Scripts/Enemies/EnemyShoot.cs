@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootRepeater : MonoBehaviour
+public class EnemyShoot : MonoBehaviour
 {
-    [SerializeField] GameObject bullet;
-    [SerializeField] Transform bulletSpawner;
+    [SerializeField] GameObject enemyBullet;
+    [SerializeField] Transform EBulletSpawner;
     float nextTimeToShoot;
     public float fireRate = 1;
     public bool canfire = true;
@@ -27,14 +27,13 @@ public class ShootRepeater : MonoBehaviour
     {
         canfire = false;
         GameObject temporaryBall;
-        temporaryBall = Instantiate(bullet, bulletSpawner.transform.position, bullet.transform.rotation) as GameObject;
+        temporaryBall = Instantiate(enemyBullet, EBulletSpawner.transform.position, enemyBullet.transform.rotation) as GameObject;
         Rigidbody temporaryBallRB;
         temporaryBallRB = temporaryBall.GetComponent<Rigidbody>();
-        temporaryBallRB.AddForce(bulletSpawner.transform.forward);
-        Destroy(temporaryBall, 5f);
+        temporaryBallRB.AddForce(EBulletSpawner.transform.forward);
+        Destroy(temporaryBall, 50);
         nextTimeToShoot = Time.time;
-        
-    
+        StartCoroutine(FireRateHandler());       
         yield return null;
 
        

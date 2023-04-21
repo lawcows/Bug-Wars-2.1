@@ -16,7 +16,7 @@ private void OnTriggerEnter(Collider other) {
     if(!used)
     {
     Debug.Log("ouch");
-
+    bullet.bullet1Damage = bullet.bullet1Damage + increase;
     used = true;
     Destroy(gameObject);
     }

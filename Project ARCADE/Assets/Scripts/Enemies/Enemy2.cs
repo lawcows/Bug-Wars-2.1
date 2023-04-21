@@ -9,6 +9,7 @@ public class Enemy2 : MonoBehaviour
     public GameObject bullet;
     public Transform bulletSpawner;
     private Transform playerTransform; 
+    public Bullet bulletScript;
     Vector3 enemyMoveX = new Vector3 (1,0,0);
     Vector3 enemyMoveZ = new Vector3 (0,0,-0.5f);
     float nextShot;
@@ -32,7 +33,7 @@ public class Enemy2 : MonoBehaviour
     }
     void GetHitted()
     {
-        enemy1HP = enemy1HP - Bullet.bullet1Damage;
+        enemy1HP = enemy1HP - bulletScript.bullet1Damage;
         if(enemy1HP <= 0)
         {
             StartCoroutine(Die());

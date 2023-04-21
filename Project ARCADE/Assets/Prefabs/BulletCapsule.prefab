@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 1, y: 0, z: 0}
   speed: 30
+  bullet1Damage: 30
 --- !u!54 &1780514808734839311
 Rigidbody:
   m_ObjectHideFlags: 0
