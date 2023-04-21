@@ -5,8 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
-    Vector3 enemyMoveX = new Vector3 (-1,0,0);
-    Vector3 enemyMoveZ = new Vector3 (0,0,-0.5f);
+    public Vector3 enemyMoveX = new Vector3 (-1,0,0);
+    public Vector3 enemyMoveZ = new Vector3 (0,0,-0.5f);
 
 
     public ParticleSystem explosionPS;
