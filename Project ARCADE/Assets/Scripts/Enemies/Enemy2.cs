@@ -6,16 +6,9 @@ using UnityEngine;
 public class Enemy2 : MonoBehaviour
 {
     public float enemySpeed = 0.2f;
-    public GameObject bullet;
-    public Transform bulletSpawner;
     private Transform playerTransform; 
     public Bullet bulletScript;
-    Vector3 enemyMoveX = new Vector3 (1,0,0);
-    Vector3 enemyMoveZ = new Vector3 (0,0,-0.5f);
-    float nextShot;
-    public float fireRate;
     public float enemy1HP = 100;
-    public float bulletDamage= 30;
 
     private void Start() {
         playerTransform = GameObject.Find("Player").GetComponent<Transform>();
@@ -45,14 +38,6 @@ public class Enemy2 : MonoBehaviour
 
         }
     }
-    private void OnTriggerEnter(Collider other) {
-        if(other.tag == "checkpoint")
-        {
-
-            enemyMoveX = -enemyMoveX;
-        }
-    }
-
 }
 
 

@@ -7,12 +7,8 @@ public class Spawn : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform[] spawnPoints;
     public float spawnInterval = 2.0f;
+    public float enemyCount = 3;
 
-    void SpawnEnemy()
-    {
-        Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject gameObject1 = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-    }
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +19,16 @@ public class Spawn : MonoBehaviour
     void Update()
     {
         
+    }
+    void SpawnEnemy()
+    {   
+        int i = 0;
+        i++;
+        if(i <= enemyCount)
+        {
+        Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+        GameObject gameObject1 = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        }
+        else return;
     }
 }

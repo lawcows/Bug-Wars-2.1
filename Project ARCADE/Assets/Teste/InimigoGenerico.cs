@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InimigoGenerico : MonoBehaviour
 {
+    //Variáveis desse Script
     float nextTimeToShoot;
     bool fireCooldown = true;
     public EnemySO enemySO;
@@ -41,6 +42,7 @@ private void Start() {
 
     //Find player 
     playerTransform = GameObject.Find("Player").GetComponent<Transform>();
+    explosionAudio = GetComponent<AudioSource>();
 
 }
 
@@ -51,13 +53,14 @@ private void Start() {
             StartCoroutine(GunShoot());
 }
 
-    private void OnCollisionEnter(Collision other) {
+    void OnCollisionEnter(Collision other) {
+        if(other.gameObject.CompareTag("Player")) return;
         GetHitted();
     }
     void GetHitted()
     {
         enemy1HP = enemy1HP - bulletScript.bullet1Damage;
-        explosionAudio.GetComponent<AudioSource>().Play();
+        explosionAudio.Play();
         ParticleSystem tExplosion = Instantiate(explosionPS, transform.position, Quaternion.identity);
         StartCoroutine(DestroyPS());
         if(enemy1HP <= 0)
