@@ -18,4 +18,6 @@ public class EnemySO : ScriptableObject
     public Bullet bulletScript;
     public GameObject enemyBullet;
     public Transform playerTransform;
+    public MeshFilter enemyMeshFilter;
+    public Material enemyMaterial;
 }

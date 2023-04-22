@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a4784cc43eae964386b64717fb316c0, type: 3}
-  m_Name: enemySO
+  m_Name: Enemy 4 SO
   m_EditorClassIdentifier: 
   moveX: {x: -1, y: 0, z: 0}
   moveZ: {x: 0, y: 0, z: -1}
@@ -25,3 +25,5 @@ MonoBehaviour:
   bulletScript: {fileID: 4355960260877172352, guid: 8cf3287fbffcecc40b528722120d0cc2, type: 3}
   enemyBullet: {fileID: 302901596789098868, guid: 48b05e7557033aa40a399a9db30d74b3, type: 3}
   playerTransform: {fileID: 5509913189837678829, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+  enemyMeshFilter: {fileID: 2353278774107937647, guid: 0936231c54cfb394d97518a6a38272cd, type: 3}
+  enemyMaterial: {fileID: 2100000, guid: 84fb035d70ce11f4b8a3c046d2a62331, type: 2}

@@ -7,12 +7,13 @@ public class Spawn : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform[] spawnPoints;
     public float spawnInterval = 2.0f;
-    public float enemyCount = 3;
+    public int enemyCount = 3;
+    int enemyIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", spawnInterval, spawnInterval);
+        StartCoroutine(SpawnEnemy());
     }
 
     // Update is called once per frame
@@ -20,15 +21,15 @@ public class Spawn : MonoBehaviour
     {
         
     }
-    void SpawnEnemy()
+    IEnumerator SpawnEnemy()
     {   
-        int i = 0;
-        i++;
-        if(i <= enemyCount)
+        yield return new WaitForSecondsRealtime (spawnInterval);
+        enemyIndex++;
+        if(enemyIndex <= enemyCount)
         {
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
         GameObject gameObject1 = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        StartCoroutine(SpawnEnemy());
         }
-        else return;
     }
 }

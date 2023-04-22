@@ -43,7 +43,6 @@ private void Start() {
     //Find player 
     playerTransform = GameObject.Find("Player").GetComponent<Transform>();
     explosionAudio = GetComponent<AudioSource>();
-
 }
 
     private void Update() {
@@ -62,22 +61,12 @@ private void Start() {
         enemy1HP = enemy1HP - bulletScript.bullet1Damage;
         explosionAudio.Play();
         ParticleSystem tExplosion = Instantiate(explosionPS, transform.position, Quaternion.identity);
-        StartCoroutine(DestroyPS());
+        Destroy(tExplosion,1);
         if(enemy1HP <= 0)
         {
-        StartCoroutine(Die());
+        Destroy(gameObject);
         }
-        IEnumerator Die()
-        {
-            yield return  new WaitForSeconds(0.5f);
-            Destroy(gameObject);
 
-        }
-        IEnumerator DestroyPS()
-        {
-            yield return new WaitForSecondsRealtime(1);
-            Destroy(tExplosion);
-        }
     }
     void Movement()
     {

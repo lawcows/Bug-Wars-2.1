@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 1087894745}
   - component: {fileID: -4814188366021267119}
   m_Layer: 8
-  m_Name: "InimigoGen\xE9rico"
+  m_Name: Enemy 3.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7306093473227197485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1150.8933, y: 409.0091, z: 293.16623}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -118,7 +118,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2eb5b2a6ab54caf4687a4da27b620d89, type: 2}
+  - {fileID: 2100000, guid: 84fb035d70ce11f4b8a3c046d2a62331, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,7 +147,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7306093473227197485}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1087894745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c020980b04d87b449fb2639a6f4c9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySO: {fileID: 11400000, guid: f9ed5dffed918bd4f898074cb90257f7, type: 2}
+  enemySO: {fileID: 11400000, guid: fbd57b3b7b5cc854da33ee794628cf55, type: 2}
   eBulletSpawner: {fileID: 5335844378371074798}
 --- !u!82 &-4814188366021267119
 AudioSource:
