@@ -12,8 +12,10 @@ public class EnemySO : ScriptableObject
     public float speed;
     public float fireRate;
     public bool canShoot;
+    public bool followPlayer;
     public AudioSource explosionAudio;
     public ParticleSystem explosionPS;
     public Bullet bulletScript;
     public GameObject enemyBullet;
+    public Transform playerTransform;
 }

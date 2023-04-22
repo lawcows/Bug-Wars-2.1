@@ -7,9 +7,10 @@ public class InimigoGenerico : MonoBehaviour
     float nextTimeToShoot;
     bool fireCooldown = true;
     public EnemySO enemySO;
+    public Transform eBulletSpawner;
     //Dentro do EnemySO
     GameObject enemyBullet;
-    public Transform eBulletSpawner;
+    Transform playerTransform;
     ParticleSystem explosionPS;
     AudioSource explosionAudio;
     Bullet bulletScript;
@@ -20,8 +21,10 @@ public class InimigoGenerico : MonoBehaviour
     float bulletDamage;
     float enemySpeed;
     bool canShoot;
+    bool followPlayer;
 
 private void Start() {  
+    //ScriptleObjects references 
     enemyMoveX = enemySO.moveX;
     enemyMoveZ = enemySO.moveZ;
     enemy1HP = enemySO.health;
@@ -33,11 +36,16 @@ private void Start() {
     fireRate = enemySO.fireRate;
     enemyBullet = enemySO.enemyBullet;
     canShoot = enemySO.canShoot;
+    playerTransform = enemySO.playerTransform;
+    followPlayer = enemySO.followPlayer;
+
+    //Find player 
+    playerTransform = GameObject.Find("Player").GetComponent<Transform>();
+
 }
 
     private void Update() {
-        transform.Translate(enemyMoveX * enemySpeed * Time.deltaTime);
-        transform.Translate(enemyMoveZ * enemySpeed * Time.deltaTime);
+        Movement();
         if(!canShoot)  return;
         if (fireCooldown)
             StartCoroutine(GunShoot());
@@ -56,18 +64,31 @@ private void Start() {
         {
         StartCoroutine(Die());
         }
-    IEnumerator Die()
-    {
-        yield return  new WaitForSeconds(0.5f);
-        Destroy(gameObject);
+        IEnumerator Die()
+        {
+            yield return  new WaitForSeconds(0.5f);
+            Destroy(gameObject);
 
-    }
+        }
         IEnumerator DestroyPS()
         {
             yield return new WaitForSecondsRealtime(1);
             Destroy(tExplosion);
         }
     }
+    void Movement()
+    {
+        if(followPlayer)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, enemySpeed * Time.deltaTime);
+        }
+        else if (!followPlayer)
+        {
+            transform.Translate(enemyMoveX * enemySpeed * Time.deltaTime);
+            transform.Translate(enemyMoveZ * enemySpeed * Time.deltaTime);
+        }
+    }
+
     IEnumerator GunShoot()
     {
         fireCooldown = false;
