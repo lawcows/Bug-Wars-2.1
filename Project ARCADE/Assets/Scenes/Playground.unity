@@ -3043,7 +3043,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2133872834}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1083631819}
+        m_TargetAssemblyTypeName: GameoverMenu, Assembly-CSharp
+        m_MethodName: BackToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2133872834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3101,7 +3113,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: enemyCount
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: enemyPrefab
@@ -3109,7 +3121,7 @@ PrefabInstance:
       objectReference: {fileID: 7306093473227197485, guid: fa8a27c5cadbacd43848a115903986c5, type: 3}
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: spawnInterval
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: spawnPoints.Array.data[0]
@@ -3249,6 +3261,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 478015438, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 2147072013540284581, guid: 3c580356b9725424da5283ec837b6f2f, type: 3}
     - target: {fileID: 478015438, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: GameoverMenu
       value: 

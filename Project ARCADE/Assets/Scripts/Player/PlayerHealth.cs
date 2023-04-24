@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour {
     public Material playerMaterial;
     public AudioSource oof;
     public GameObject gameoverMenu;
+    public ParticleSystem explosion;
 
     int health;
     bool isImmune = false;
@@ -41,10 +42,11 @@ public class PlayerHealth : MonoBehaviour {
         oof.Play();
 
         if(health == 0) {
-            Destroy(player);
             // aqui que vamos fazer o negocinho
-
-            gameoverMenu.SetActive(true);
+        gameoverMenu.SetActive(true);
+        ParticleSystem tExplosion = Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(tExplosion,1);
+        Destroy(player);
         }
     }
 
