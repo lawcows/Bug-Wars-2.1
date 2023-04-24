@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour {
     public float immuneBlinkTime;
     public Material playerMaterial;
     public AudioSource oof;
+    public GameObject gameoverMenu;
 
     int health;
     bool isImmune = false;
@@ -41,6 +42,9 @@ public class PlayerHealth : MonoBehaviour {
 
         if(health == 0) {
             Destroy(player);
+            // aqui que vamos fazer o negocinho
+
+            gameoverMenu.SetActive(true);
         }
     }
 
