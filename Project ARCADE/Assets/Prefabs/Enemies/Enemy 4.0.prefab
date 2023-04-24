@@ -162,6 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySO: {fileID: 11400000, guid: a0c29c87b2f4d9845a36cf9b86154bf9, type: 2}
   eBulletSpawner: {fileID: 5335844378371074798}
+  shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
 --- !u!82 &-4814188366021267119
 AudioSource:
   m_ObjectHideFlags: 0

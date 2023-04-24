@@ -22,11 +22,20 @@ public class PlayerHealth : MonoBehaviour {
         playerColor = playerMaterial.color;
     }
 
-    void Update() {
-        if (isImmune) {
+    void Update()
+    {
+        ColorChange();
+    }
+
+    private void ColorChange()
+    {
+        if (isImmune)
+        {
             float v = Mathf.PingPong(Time.time, immuneBlinkTime);
             playerMaterial.color = Color.Lerp(playerColor, Color.red, v);
-        } else {
+        }
+        else
+        {
             playerMaterial.color = playerColor;
         }
     }

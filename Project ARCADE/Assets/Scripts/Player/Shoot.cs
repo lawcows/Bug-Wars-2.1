@@ -9,6 +9,7 @@ public class Shoot: MonoBehaviour
     [SerializeField] Transform bulletSpawner;
     float nextTimeToShoot;
     public float fireRate = 1;
+    public float bulletDamage;
     public bool canfire = true;
     public AudioSource shootSound;
 

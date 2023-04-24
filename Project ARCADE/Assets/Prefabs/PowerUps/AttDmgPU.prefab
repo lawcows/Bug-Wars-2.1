@@ -127,5 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf640dabfbf75546a74e4105afe1498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 4355960260877172352, guid: 8cf3287fbffcecc40b528722120d0cc2, type: 3}
+  shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
   increase: 10

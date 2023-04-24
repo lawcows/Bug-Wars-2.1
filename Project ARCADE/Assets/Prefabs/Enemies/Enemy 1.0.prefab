@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 1087894745}
   - component: {fileID: -4814188366021267119}
   m_Layer: 8
-  m_Name: Enemy 1
+  m_Name: Enemy 1.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,6 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySO: {fileID: 11400000, guid: f9ed5dffed918bd4f898074cb90257f7, type: 2}
   eBulletSpawner: {fileID: 5335844378371074798}
+  shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
 --- !u!82 &-4814188366021267119
 AudioSource:
   m_ObjectHideFlags: 0

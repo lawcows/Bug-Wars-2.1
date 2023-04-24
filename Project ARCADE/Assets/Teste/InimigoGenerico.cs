@@ -9,6 +9,7 @@ public class InimigoGenerico : MonoBehaviour
     bool fireCooldown = true;
     public EnemySO enemySO;
     public Transform eBulletSpawner;
+    public Shoot shoot;
     //Dentro do EnemySO
     GameObject enemyBullet;
     Transform playerTransform;
@@ -58,7 +59,7 @@ private void Start() {
     }
     void GetHitted()
     {
-        enemy1HP = enemy1HP - bulletScript.bullet1Damage;
+        enemy1HP = enemy1HP - shoot.bulletDamage;
         explosionAudio.Play();
         ParticleSystem tExplosion = Instantiate(explosionPS, transform.position, Quaternion.identity);
         Destroy(tExplosion,1);

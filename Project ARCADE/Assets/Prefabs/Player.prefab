@@ -179,6 +179,7 @@ MonoBehaviour:
   bullet: {fileID: 2301967408342695997, guid: 8cf3287fbffcecc40b528722120d0cc2, type: 3}
   bulletSpawner: {fileID: 7346353963145987972}
   fireRate: 1
+  bulletDamage: 10
   canfire: 1
   shootSound: {fileID: 728651101}
 --- !u!114 &2064147424578589852
@@ -413,6 +414,8 @@ MonoBehaviour:
   immuneBlinkTime: 0.3
   playerMaterial: {fileID: 2100000, guid: e8ef09ef5796b4a4dbf685f353216844, type: 2}
   oof: {fileID: 478015439}
+  gameoverMenu: {fileID: 0}
+  explosion: {fileID: 0}
 --- !u!1001 &7747593069986790752
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ADPowerUp : MonoBehaviour
 {
-    public Bullet bullet;
+    Shoot shoot;
     bool used = false;
     public float increase = 10f;
 private void Start() {
-    
+    shoot = GameObject.Find("Player").GetComponent<Shoot>();
 }
 
 
@@ -16,7 +16,7 @@ private void OnTriggerEnter(Collider other) {
     if(!used)
     {
     Debug.Log("ouch");
-    bullet.bullet1Damage = bullet.bullet1Damage + increase;
+    shoot.bulletDamage = shoot.bulletDamage + increase;
     used = true;
     Destroy(gameObject);
     }

@@ -7,7 +7,6 @@ public class Bullet : MonoBehaviour
 
     public Vector3 direction;
     public float speed = 8;
-    public float bullet1Damage = 30;
 
     Vector3 velocity;
 
