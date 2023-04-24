@@ -43,7 +43,6 @@ private void Start() {
 
     //Find player 
     playerTransform = GameObject.Find("Player").GetComponent<Transform>();
-    explosionAudio = GetComponent<AudioSource>();
 }
 
     private void Update() {
@@ -59,8 +58,9 @@ private void Start() {
     }
     void GetHitted()
     {
-        enemy1HP = enemy1HP - shoot.bulletDamage;
+        explosionAudio = GetComponent<AudioSource>();
         explosionAudio.Play();
+        enemy1HP = enemy1HP - shoot.bulletDamage;
         ParticleSystem tExplosion = Instantiate(explosionPS, transform.position, Quaternion.identity);
         Destroy(tExplosion,1);
         if(enemy1HP <= 0)

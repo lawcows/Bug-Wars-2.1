@@ -13,6 +13,6 @@ public class Camera : MonoBehaviour
 
     void Update()
     {
-        cameraGO.position = new Vector3 (cameraGO.position.x, cameraGO.transform.position.y, cameraGO.transform.position.z + cameraSpeed*0.01f);
+        cameraGO.position = new Vector3 (cameraGO.position.x + cameraSpeed*0.01f, cameraGO.transform.position.y, cameraGO.transform.position.z);
     }
 }
