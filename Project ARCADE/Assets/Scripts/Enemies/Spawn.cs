@@ -28,7 +28,7 @@ public class Spawn : MonoBehaviour
         if(enemyIndex <= enemyCount)
         {
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject gameObject1 = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject gameObject1 = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
         StartCoroutine(SpawnEnemy());
         }
     }
