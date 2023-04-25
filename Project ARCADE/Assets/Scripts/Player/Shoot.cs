@@ -11,6 +11,7 @@ public class Shoot: MonoBehaviour
     public float bulletDamage;
     public bool canfire = true;
     public int multishoot = 1;
+    public int critRate;
     public AudioSource shootSound;
 
     public void Start() {
@@ -25,6 +26,15 @@ public void Update()
 
     IEnumerator GunShoot()
 {
+    //Calcular se vai ser critico ou não
+    int r = Random.Range(1,5);
+    if(r<=critRate)
+    {
+        // critico
+    }
+    else // normal
+
+
     if(Input.GetKey(KeyCode.Mouse0))
     {  
             canfire = false;

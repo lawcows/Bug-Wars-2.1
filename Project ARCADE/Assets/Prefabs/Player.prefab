@@ -179,7 +179,7 @@ MonoBehaviour:
   bullet: {fileID: 2301967408342695997, guid: 8cf3287fbffcecc40b528722120d0cc2, type: 3}
   bulletSpawner: {fileID: 7346353963145987972}
   fireRate: 1
-  bulletDamage: 10
+  bulletDamage: 1
   canfire: 1
   multishoot: 1
   shootSound: {fileID: 728651101}
