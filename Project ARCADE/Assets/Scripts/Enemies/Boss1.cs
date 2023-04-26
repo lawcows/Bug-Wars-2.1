@@ -29,39 +29,6 @@ public class Boss1 : MonoBehaviour
         }
         else transform.Translate(Vector3.zero);
     }
-
-    IEnumerator UpMovement()
-    {
-        direction = (targets[0].transform.position - transform.position).normalized;    
-        movement = false;
-        yield return new WaitForSecondsRealtime(moveTime);
-        StartCoroutine(StopMovement1());
-    }
-
-    IEnumerator StopMovement1()
-    {
-        movement = true;
-        yield return new WaitForSecondsRealtime(5);
-        StartCoroutine(DownMovement());
-
-    }
-
-    IEnumerator DownMovement()
-    {
-        direction = (targets[1].transform.position - transform.position).normalized;    
-        movement = false;
-        yield return new WaitForSecondsRealtime(moveTime);
-        StartCoroutine(StopMovement2());
-    }
-
-    IEnumerator StopMovement2()
-    {
-        movement = true;
-        yield return new WaitForSecondsRealtime(5);
-        StartCoroutine(UpMovement());
-    }
-
-
     IEnumerator Shoot()
     {
         Debug.Log("Shooting");
