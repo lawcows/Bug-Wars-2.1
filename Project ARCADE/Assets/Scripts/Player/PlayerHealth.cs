@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
     public Image[] hearts;
-    public GameObject player;
+    public GameObject bugGO;
     public float immuneTime;
     public float immuneBlinkTime;
     public Material playerMaterial;
@@ -55,7 +55,7 @@ public class PlayerHealth : MonoBehaviour {
         gameoverMenu.SetActive(true);
         ParticleSystem tExplosion = Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(tExplosion,1);
-        Destroy(player);
+        Destroy(bugGO);
         }
     }
 

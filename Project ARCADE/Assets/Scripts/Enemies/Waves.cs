@@ -25,7 +25,6 @@ public class Waves : MonoBehaviour
     }
 
     private void Update() {
-    Debug.Log(Time.time);
 }
 
 }
