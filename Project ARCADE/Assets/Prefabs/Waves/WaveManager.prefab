@@ -166,7 +166,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 129734180598640445}
-  - {fileID: 129734179547823747}
   m_Father: {fileID: 6256697127310710334}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1276,104 +1275,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
   m_PrefabInstance: {fileID: 6256697126834406534}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6256697126848427501
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6256697126932585448}
-    m_Modifications:
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: enemyCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: enemyPrefab
-      value: 
-      objectReference: {fileID: 7306093473227197485, guid: 02ecd1bf695a7304cbb25d59b33cd865, type: 3}
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: spawnInterval
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: spawnPoints.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: spawnPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 129734179547823747}
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: spawnPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: spawnPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: spawnPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: spawnPoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6819435496123204485, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-      propertyPath: m_Name
-      value: Spawner (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
---- !u!4 &129734179547823747 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6275951278492044142, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
-  m_PrefabInstance: {fileID: 6256697126848427501}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6256697126878663315
 PrefabInstance:
@@ -2968,15 +2869,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: enemyCount
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: enemyPrefab
       value: 
-      objectReference: {fileID: 7306093473227197485, guid: fa8a27c5cadbacd43848a115903986c5, type: 3}
+      objectReference: {fileID: 8765895810426764316, guid: 999a0ed6c07ae99499c23b08c81d1a3b, type: 3}
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: spawnInterval
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: spawnPoints.Array.size
@@ -2985,7 +2886,7 @@ PrefabInstance:
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: spawnPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 129734180598640445}
+      objectReference: {fileID: 5050335193458866945, guid: 999a0ed6c07ae99499c23b08c81d1a3b, type: 3}
     - target: {fileID: 1359662898, guid: 37462e7b4676f9f46bc8f6c7ac2e8e6c, type: 3}
       propertyPath: spawnPoints.Array.data[1]
       value: 

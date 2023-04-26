@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: spawnPoints.Array.data[3]
       value: 
       objectReference: {fileID: 2137718166}
+    - target: {fileID: 6256697126932585449, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6256697126933100601, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: spawnPoints.Array.size
       value: 4
@@ -265,11 +269,35 @@ PrefabInstance:
       objectReference: {fileID: 2137718166}
     - target: {fileID: 6256697127048231367, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: spawnPoints.Array.data[7]
+      value: 
+      objectReference: {fileID: 2137718166}
+    - target: {fileID: 6256697127292793559, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256697127292793559, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: spawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 2146944748}
+    - target: {fileID: 6256697127292793559, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: spawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 33364968}
+    - target: {fileID: 6256697127292793559, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: spawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 2129009429}
+    - target: {fileID: 6256697127292793559, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: spawnPoints.Array.data[3]
       value: 
       objectReference: {fileID: 2137718166}
     - target: {fileID: 6256697127310710328, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: m_Name
       value: WaveManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256697127310710328, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6256697127310710334, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: m_RootOrder
@@ -314,6 +342,10 @@ PrefabInstance:
     - target: {fileID: 6256697127310710334, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256697127310710335, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6256697127839115919, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: spawnPoints.Array.size
