@@ -7,6 +7,7 @@ public class GameoverMenu : MonoBehaviour
 {
     [SerializeField] string gameSceneName;
     [SerializeField] string menuSceneName;
+    [SerializeField] string playerSelectionSceneName;
 
     private void Start() {
         Time.timeScale = 0.2f;
@@ -22,6 +23,13 @@ public class GameoverMenu : MonoBehaviour
     {
         SceneManager.LoadScene(menuSceneName);
         Time.timeScale = 1;
+    }
+
+    public void PlayerSelection()
+    {
+        SceneManager.LoadScene(playerSelectionSceneName);
+        Time.timeScale = 1;
+        Boss1.boss1Defeated = false;
     }
 
 }

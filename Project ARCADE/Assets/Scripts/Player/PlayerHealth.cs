@@ -19,6 +19,7 @@ public class PlayerHealth : MonoBehaviour {
     
     void Start() {
         health = hearts.Length;
+        playerMaterial.color = Color.white;
         playerColor = playerMaterial.color;
     }
 

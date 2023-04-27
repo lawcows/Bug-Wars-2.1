@@ -778,6 +778,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1258081183 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3301242178395963763, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
+  m_PrefabInstance: {fileID: 1638233228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1315773773 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5199340661188474462, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
@@ -796,18 +801,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5199340660851520584, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
-      propertyPath: gameSceneName
-      value: Level 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5199340660851520584, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
-      propertyPath: menuSceneName
-      value: Menu
-      objectReference: {fileID: 0}
     - target: {fileID: 5199340661436259929, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 5199340661436259932, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 1258081183}
     - target: {fileID: 5199340661436259933, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
       propertyPath: m_Pivot.x
       value: 0

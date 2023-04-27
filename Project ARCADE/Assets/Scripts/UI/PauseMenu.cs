@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject winScreen;
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -19,6 +20,11 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
             }
+        }
+
+        if(Boss1.boss1Defeated)
+        {
+            winScreen.SetActive(true);
         }
     }
 

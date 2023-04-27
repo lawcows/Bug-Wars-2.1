@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss1 : MonoBehaviour
 {
@@ -17,10 +18,10 @@ public class Boss1 : MonoBehaviour
     public float moveTime;
     public float firerate;
     bool movement = false;
+    public static bool boss1Defeated = false;
     void Start()
     {
         StartCoroutine(Shoot());
-        
     }
     void Update()
     {
@@ -54,11 +55,12 @@ private void OnCollisionEnter(Collision other) {
         }
     IEnumerator Die()
     {
+        boss1Defeated = true;
         yield return  new WaitForSeconds(0.5f);
         Destroy(gameObject);
-
     }
-        IEnumerator DestroyPS()
+
+    IEnumerator DestroyPS()
         {
             yield return new WaitForSecondsRealtime(1);
             Destroy(tExplosion);

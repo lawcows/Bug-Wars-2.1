@@ -12,5 +12,10 @@ public class BossBullet : MonoBehaviour
         direction = (transform.position - boss.transform.position).normalized;
         rb = GetComponent<Rigidbody>();
         rb.AddForce(direction * speed);
+        Destroy(gameObject, 5);
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        Destroy(gameObject);
     }
 }
