@@ -18,7 +18,7 @@ public class ParallaxBG : MonoBehaviour
     void Update()
     {
 
-        parallaxEffectAcc -= parallaxEffect / 1000.0f;
+        parallaxEffectAcc -= parallaxEffect / 100.0f;
         float temp = (1 - parallaxEffectAcc);
         float dist = (parallaxEffectAcc);
 

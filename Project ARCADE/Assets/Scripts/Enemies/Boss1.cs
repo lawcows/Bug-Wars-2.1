@@ -31,10 +31,8 @@ public class Boss1 : MonoBehaviour
     }
     IEnumerator Shoot()
     {
-        Debug.Log("Shooting");
         for(int i = 0; i< bulletSpawners.Length; i++)
         {
-        Debug.Log("Shooting " +i);
         Instantiate(bulletPrefab, bulletSpawners[i].transform.position, Quaternion.identity);
         yield return new WaitForSecondsRealtime(1/firerate);
         }
