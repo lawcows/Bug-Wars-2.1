@@ -396,6 +396,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &450078370 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 450078370, guid: 448d6ca5895374548878532b0202b195, type: 3}
+  m_PrefabInstance: {fileID: 2598540374468770463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &562961099 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5199340660851520586, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
@@ -573,6 +578,10 @@ PrefabInstance:
       propertyPath: hearts.Array.data[4]
       value: 
       objectReference: {fileID: 998205290}
+    - target: {fileID: 2064147424578589852, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      propertyPath: movementBounds
+      value: 
+      objectReference: {fileID: 450078370}
     - target: {fileID: 5406185527719768384, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1038,14 +1047,6 @@ PrefabInstance:
     - target: {fileID: 2598540373816088555, guid: 448d6ca5895374548878532b0202b195, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2598540373816088556, guid: 448d6ca5895374548878532b0202b195, type: 3}
-      propertyPath: orthographic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2598540373816088556, guid: 448d6ca5895374548878532b0202b195, type: 3}
-      propertyPath: orthographic size
-      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2598540373816088558, guid: 448d6ca5895374548878532b0202b195, type: 3}
       propertyPath: m_Name
