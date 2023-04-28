@@ -6,38 +6,53 @@ using UnityEngine.SceneManagement;
 
 public class Boss1 : MonoBehaviour
 {
-    public GameObject [] targets;
     public GameObject bulletPrefab;
     public GameObject [] bulletSpawners;
     public AudioSource damageSE;
     public ParticleSystem explosionPS;
     public Shoot shoot;
-    Vector3 direction;
-    public float speed;
+    Animator animator;
     public float bossHP = 20;
-    public float moveTime;
     public float firerate;
-    bool movement = false;
+    bool shooting = false;
+
     public static bool boss1Defeated = false;
     void Start()
     {
-        StartCoroutine(Shoot());
+        StartCoroutine(Iddle());
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
-        if(movement){
-        transform.Translate(direction * speed * Time.deltaTime);
-        }
-        else transform.Translate(Vector3.zero);
+
     }
+
+    IEnumerator Iddle()
+    {
+       yield return new WaitForSecondsRealtime(4);
+       animator.SetBool("Attack", true);
+       StartCoroutine(BulletHell());
+    }
+
+    IEnumerator BulletHell()
+    {
+        yield return new WaitForSecondsRealtime(5);
+        animator.SetBool("Attack", false);
+        if(!shooting) 
+        {
+            StartCoroutine(Shoot());
+        }
+    }        
     IEnumerator Shoot()
     {
-        for(int i = 0; i< bulletSpawners.Length; i++)
-        {
-        Instantiate(bulletPrefab, bulletSpawners[i].transform.position, Quaternion.identity);
+        shooting = true;
         yield return new WaitForSecondsRealtime(1/firerate);
-        }
-        StartCoroutine(Shoot());
+
+            for(int i = 0; i< bulletSpawners.Length; i++)
+            {
+            Instantiate(bulletPrefab, bulletSpawners[i].transform.position, Quaternion.identity);
+            }
+            StartCoroutine(Shoot());       
     }
 
 private void OnCollisionEnter(Collision other) {

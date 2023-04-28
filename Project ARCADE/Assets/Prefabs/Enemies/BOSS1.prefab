@@ -446,11 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c476bc2104e4124f8d44cfa2309678f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets:
-  - {fileID: 6124707315659106777}
-  - {fileID: 4972667834903562167}
   bulletPrefab: {fileID: 8533030449555409205, guid: 5a8b9f1078983df449dacd970b4d80a7, type: 3}
-  winScreen: {fileID: 0}
   bulletSpawners:
   - {fileID: 7769191323538532327}
   - {fileID: 6277733930520416268}
@@ -463,10 +459,8 @@ MonoBehaviour:
   damageSE: {fileID: -4648392686983783321}
   explosionPS: {fileID: 2147072013540284581, guid: 3c580356b9725424da5283ec837b6f2f, type: 3}
   shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
-  speed: 1
   bossHP: 20
-  moveTime: 8
-  firerate: 20
+  firerate: 5
 --- !u!82 &-4648392686983783321
 AudioSource:
   m_ObjectHideFlags: 0
@@ -640,15 +634,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3058c70ffdebae340813ecabafc48df5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3058c70ffdebae340813ecabafc48df5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3058c70ffdebae340813ecabafc48df5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3058c70ffdebae340813ecabafc48df5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -660,7 +654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3058c70ffdebae340813ecabafc48df5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -7664148148756766168, guid: 3058c70ffdebae340813ecabafc48df5, type: 3}
       propertyPath: m_Layer
