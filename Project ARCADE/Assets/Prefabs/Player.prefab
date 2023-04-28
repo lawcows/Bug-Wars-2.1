@@ -197,6 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  movementBounds: {fileID: 0}
 --- !u!1 &6999873446429261036
 GameObject:
   m_ObjectHideFlags: 0
