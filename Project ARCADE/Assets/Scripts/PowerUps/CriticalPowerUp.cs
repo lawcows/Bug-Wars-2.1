@@ -6,6 +6,7 @@ public class CriticalPowerUp : MonoBehaviour
 {
     Shoot shoot;
     bool used = false;
+    public static bool criticalStrike = false;
 private void Start() {
     shoot = GameObject.Find("Player").GetComponent<Shoot>();
     int r = Random.Range(0,5);

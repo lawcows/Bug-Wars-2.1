@@ -46,8 +46,6 @@ public void Update()
             Destroy(temporaryBall, 5f);
             nextTimeToShoot = Time.time;
 
-
-
             //Multishoot
             if(multishoot>1){
                 for(int i = 1; i <= multishoot && i< 6; i++)
