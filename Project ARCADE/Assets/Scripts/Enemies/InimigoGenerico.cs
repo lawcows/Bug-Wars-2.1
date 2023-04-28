@@ -10,6 +10,8 @@ public class InimigoGenerico : MonoBehaviour
     public EnemySO enemySO;
     public Transform eBulletSpawner;
     public Shoot shoot;
+    public bool tripleBullet;
+
     //Dentro do EnemySO
     GameObject enemyBullet;
     Transform playerTransform;
@@ -85,12 +87,11 @@ private void Start() {
     IEnumerator GunShoot()
     {
         fireCooldown = false;
-        GameObject temporaryBall;
-        temporaryBall = Instantiate(enemyBullet, eBulletSpawner.transform.position, enemyBullet.transform.rotation) as GameObject;
-        Rigidbody temporaryBallRB;
-        temporaryBallRB = temporaryBall.GetComponent<Rigidbody>();
-        temporaryBallRB.AddForce(eBulletSpawner.transform.forward);
-        Destroy(temporaryBall, 50);
+        if(tripleBullet) {
+            tripleShot();
+        } else {
+            singleShot();
+        }
         nextTimeToShoot = Time.time;
         StartCoroutine(FireRateHandler());       
         yield return null;
@@ -103,5 +104,31 @@ private void Start() {
             fireCooldown = true;
         }
 
+    }
+
+    void singleShot()
+    {
+        GameObject temporaryBall;
+        temporaryBall = Instantiate(enemyBullet, eBulletSpawner.transform.position, enemyBullet.transform.rotation) as GameObject;
+        Rigidbody temporaryBallRB;
+        temporaryBallRB = temporaryBall.GetComponent<Rigidbody>();
+        temporaryBallRB.AddForce(eBulletSpawner.transform.forward);
+        Destroy(temporaryBall, 50);
+    }
+
+    void tripleShot()
+    {
+        createBullet(300, 0);
+        createBullet(300, 30);
+        createBullet(300, -30);
+    }
+
+    void createBullet(float force, float angle) {
+        GameObject bullet = Instantiate(enemyBullet, eBulletSpawner.transform.position, enemyBullet.transform.rotation) as GameObject;
+        Vector3 forceVector = eBulletSpawner.transform.forward * force;
+        forceVector = Quaternion.AngleAxis(angle, Vector3.up) * forceVector;
+
+        bullet.GetComponent<Rigidbody>().AddForce(forceVector);
+        Destroy(bullet, 50);
     }
 }
