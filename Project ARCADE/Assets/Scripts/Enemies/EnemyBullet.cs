@@ -13,7 +13,7 @@ public class EnemyBullet : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 6);
     }
     void Update()
     {
