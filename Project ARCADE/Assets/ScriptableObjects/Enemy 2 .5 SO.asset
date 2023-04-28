@@ -20,7 +20,7 @@ MonoBehaviour:
   fireRate: 0.3
   canShoot: 1
   followPlayer: 0
-  explosionAudio: {fileID: -4814188366021267119, guid: ec6264884ec421b44b977b226a1b224b, type: 3}
+  explosionAudio: {fileID: -4814188366021267119, guid: 675494cfd21a25747a69d678788f7c0d, type: 3}
   explosionPS: {fileID: 2147072013540284581, guid: cfebe3d0f238f0c43b3a179661ee9266, type: 3}
   bulletScript: {fileID: 4355960260877172352, guid: 8cf3287fbffcecc40b528722120d0cc2, type: 3}
   enemyBullet: {fileID: 302901596789098868, guid: 48b05e7557033aa40a399a9db30d74b3, type: 3}
