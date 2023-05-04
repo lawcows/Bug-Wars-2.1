@@ -352,6 +352,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6256697127310710335, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
+      propertyPath: waveText
+      value: 
+      objectReference: {fileID: 2081663149}
+    - target: {fileID: 6256697127310710335, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -445,7 +449,7 @@ Transform:
   m_Children:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &701267460
 MonoBehaviour:
@@ -562,6 +566,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 478015438, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      propertyPath: myCollider
+      value: 
+      objectReference: {fileID: 1015361481}
     - target: {fileID: 478015438, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: gameoverMenu
       value: 
@@ -784,6 +792,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &1015361481 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 211053945720386942, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+  m_PrefabInstance: {fileID: 846225214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1050806310 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5199340660683976571, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
@@ -998,6 +1011,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2081663149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3477568057083976577, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
+  m_PrefabInstance: {fileID: 1638233228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2129009429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3486819313818452986, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
@@ -1079,7 +1103,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5397055591154251072, guid: 31c4788d0f708364f9cc19debbf3231e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5397055591154251072, guid: 31c4788d0f708364f9cc19debbf3231e, type: 3}
       propertyPath: m_LocalPosition.x

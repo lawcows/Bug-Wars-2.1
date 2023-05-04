@@ -410,6 +410,7 @@ MonoBehaviour:
   oof: {fileID: 478015439}
   gameoverMenu: {fileID: 0}
   explosion: {fileID: 2147072013540284581, guid: 3c580356b9725424da5283ec837b6f2f, type: 3}
+  myCollider: {fileID: 211053945720386942}
 --- !u!1001 &245013404716495529
 PrefabInstance:
   m_ObjectHideFlags: 0

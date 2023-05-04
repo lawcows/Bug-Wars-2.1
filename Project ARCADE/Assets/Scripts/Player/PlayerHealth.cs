@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour {
     public AudioSource oof;
     public GameObject gameoverMenu;
     public ParticleSystem explosion;
+    public Collider myCollider;
 
     int health;
     bool isImmune = false;
@@ -21,11 +22,13 @@ public class PlayerHealth : MonoBehaviour {
         health = hearts.Length;
         playerMaterial.color = Color.white;
         playerColor = playerMaterial.color;
+        myCollider = GetComponent<CapsuleCollider>();
     }
 
     void Update()
     {
         ColorChange();
+        GodMode();
     }
 
     private void ColorChange()
@@ -63,5 +66,15 @@ public class PlayerHealth : MonoBehaviour {
     IEnumerator ImmuneTimer() {
         yield return new WaitForSeconds(immuneTime);
         isImmune = false;
+    }
+
+    public void GodMode()
+    {
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            if (myCollider.enabled == true)
+                myCollider.enabled = false;
+            else myCollider.enabled = true;
+        }
     }
 }

@@ -445,6 +445,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6256697127310710335, guid: 70276b9b6312c544e845e52287b70468, type: 3}
+      propertyPath: waveText
+      value: 
+      objectReference: {fileID: 1638233229}
+    - target: {fileID: 6256697127310710335, guid: 70276b9b6312c544e845e52287b70468, type: 3}
       propertyPath: waves.Array.data[0]
       value: 
       objectReference: {fileID: 895590014}
@@ -1398,6 +1402,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
+--- !u!114 &1638233229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3477568057083976577, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
+  m_PrefabInstance: {fileID: 1638233228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1713138401
 GameObject:
   m_ObjectHideFlags: 0
