@@ -111,8 +111,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySO: {fileID: 11400000, guid: 49fb8d3a4abcb4c4d9928d2b0f30bf98, type: 2}
+  powerUpGO:
+  - {fileID: 7763770340101517679, guid: 1820d9fa0f8aeac48802e71fbd8f9001, type: 3}
+  - {fileID: 7763770340101517679, guid: 122dce45d35607442af42ff7f13ce8bd, type: 3}
+  - {fileID: 7763770340101517679, guid: 6c64a12d88477044bbd19c924a1d7be0, type: 3}
   eBulletSpawner: {fileID: 5335844378371074798}
   shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+  tripleBullet: 0
+  dropRate: 1
 --- !u!82 &-4814188366021267119
 AudioSource:
   m_ObjectHideFlags: 0

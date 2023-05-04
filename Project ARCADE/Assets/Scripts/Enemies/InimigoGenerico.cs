@@ -8,9 +8,11 @@ public class InimigoGenerico : MonoBehaviour
     float nextTimeToShoot;
     bool fireCooldown = true;
     public EnemySO enemySO;
+    public GameObject [] powerUpGO;
     public Transform eBulletSpawner;
     public Shoot shoot;
     public bool tripleBullet;
+    [Range(0, 10)] public int dropRate;
 
     //Dentro do EnemySO
     GameObject enemyBullet;
@@ -67,6 +69,13 @@ private void Start() {
         Destroy(tExplosion,1);
         if(enemy1HP <= 0)
         {
+        int r = Random.Range(1, 10);
+        int p = Random.Range(0, powerUpGO.Length);
+        if(r <= dropRate)
+            {
+                Debug.Log("Instanciado o " + powerUpGO[p]);
+                Instantiate(powerUpGO[p], gameObject.transform.position, Quaternion.identity);
+            }
         Destroy(gameObject);
         }
 

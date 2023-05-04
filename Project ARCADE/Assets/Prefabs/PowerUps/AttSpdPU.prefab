@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7763770340101517677}
   - component: {fileID: 7763770340101517676}
   - component: {fileID: 7763770340101517457}
+  - component: {fileID: 1966810440279335592}
   m_Layer: 11
   m_Name: AttSpdPU
   m_TagString: Untagged
@@ -111,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f05209995ad1b0646af777a5850c9a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
 --- !u!54 &7763770340101517457
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,3 +128,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1966810440279335592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7763770340101517679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6eb28f68b7b07488fdf59188176e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDirection: {x: -1, y: 0, z: 0}
+  speed: 10

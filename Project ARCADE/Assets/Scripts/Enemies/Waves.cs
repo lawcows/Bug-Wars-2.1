@@ -26,6 +26,7 @@ public class Waves : MonoBehaviour
         waves[waveIndex].SetActive(true);
         waveText.text = "Wave " + (waveIndex + 1).ToString();
         waves[(waveIndex - 1)].SetActive(false);
+        if(waveIndex < waves.Length)
         StartCoroutine(NextWave());
     }
 
