@@ -6,6 +6,8 @@ public class Shoot: MonoBehaviour
 {
     [SerializeField] GameObject bullet;
     [SerializeField] Transform bulletSpawner;
+    public Transform playerTransform;
+    public float bulletR;
     float nextTimeToShoot;
     public float fireRate = 1;
     public float bulletDamage;
