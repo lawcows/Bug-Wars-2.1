@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shoot: MonoBehaviour
 {
     [SerializeField] GameObject bullet;
+    [SerializeField] GameObject redBullet;
     [SerializeField] Transform bulletSpawner;
     public Transform playerTransform;
     public float bulletR;
@@ -15,13 +16,20 @@ public class Shoot: MonoBehaviour
     public int multishoot = 1;
     public int critRate;
     public AudioSource shootSound;
+    public bool greenShoot, redShoot;
 
     public void Start() {
+        if (redShoot)
+        {
+            redBullet.SetActive(true);
+        }
+        else
+            redBullet.SetActive(false);
     }
 
 public void Update() 
 {
-    if(canfire)
+    if(canfire && greenShoot)
     StartCoroutine(GunShoot());
 }
 

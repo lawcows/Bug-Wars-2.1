@@ -408,6 +408,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &425036191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7863991768458290498, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+  m_PrefabInstance: {fileID: 846225214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &450078370 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 450078370, guid: 448d6ca5895374548878532b0202b195, type: 3}
@@ -594,6 +599,14 @@ PrefabInstance:
       propertyPath: hearts.Array.data[4]
       value: 
       objectReference: {fileID: 998205290}
+    - target: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      propertyPath: redShoot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      propertyPath: redBullet
+      value: 
+      objectReference: {fileID: 425036191}
     - target: {fileID: 2064147424578589852, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: movementBounds
       value: 
