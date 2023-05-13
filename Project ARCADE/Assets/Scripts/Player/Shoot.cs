@@ -19,6 +19,24 @@ public class Shoot: MonoBehaviour
     public bool greenShoot, redShoot;
 
     public void Start() {
+        //Checar qual o tipo de tiro disponível
+        if(SelectPlayer.greenPlayerSelected)
+        {
+            greenShoot = true;
+            redShoot = false;
+        }
+        else if(SelectPlayer.redPlayerSelected)
+        {
+            redShoot = true;
+            greenShoot = false;
+        }
+        else if(SelectPlayer.fusionPlayerSelected)
+        {
+            redShoot = true;
+            greenShoot = true;
+        }
+
+        // Ativar o tiro vermelho 
         if (redShoot)
         {
             redBullet.SetActive(true);
@@ -29,6 +47,7 @@ public class Shoot: MonoBehaviour
 
 public void Update() 
 {
+    // Ativar o tiro verde
     if(canfire && greenShoot)
     StartCoroutine(GunShoot());
 }

@@ -47,7 +47,7 @@ public class PauseMenu : MonoBehaviour
     //Carrega Menu inicial
     public void LoadMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Intro");
     }
 
     //Fecha o jogo

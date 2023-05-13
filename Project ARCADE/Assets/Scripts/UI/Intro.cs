@@ -9,6 +9,7 @@ public class Intro : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
         StartCoroutine(ChageToMenu());
     }
 
