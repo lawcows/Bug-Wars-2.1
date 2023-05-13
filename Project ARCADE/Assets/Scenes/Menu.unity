@@ -773,7 +773,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 663457874}
-  - component: {fileID: 663457875}
   m_Layer: 0
   m_Name: StartMenu
   m_TagString: Untagged
@@ -804,20 +803,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.0463867, y: -86.37895}
   m_SizeDelta: {x: -663.4762, y: 422.498}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &663457875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663457873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e2a63158679c244c9335537b328949a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startButton: {fileID: 1481946562}
-  choseYourBug: {fileID: 0}
 --- !u!1 &715513746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,7 +2029,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481946562}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
