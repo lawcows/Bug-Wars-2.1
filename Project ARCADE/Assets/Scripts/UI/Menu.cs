@@ -34,7 +34,7 @@ StartCoroutine(StartGameCRT());
 IEnumerator StartGameCRT()
 {
     yield return new WaitForSecondsRealtime(1);
-    SceneManager.LoadScene(1);
+    SceneManager.LoadScene("Selection");
 
 }
 }

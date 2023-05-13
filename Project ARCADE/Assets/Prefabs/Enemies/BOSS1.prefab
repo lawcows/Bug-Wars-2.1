@@ -459,7 +459,7 @@ MonoBehaviour:
   damageSE: {fileID: -4648392686983783321}
   explosionPS: {fileID: 2147072013540284581, guid: 3c580356b9725424da5283ec837b6f2f, type: 3}
   shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
-  bossHP: 20
+  bossHP: 100
   firerate: 5
 --- !u!82 &-4648392686983783321
 AudioSource:

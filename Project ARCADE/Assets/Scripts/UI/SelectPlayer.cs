@@ -11,7 +11,7 @@ public class SelectPlayer : MonoBehaviour
     public TextMeshProUGUI choseYourBug;
 
     private void Start() {
-        startButton.SetActive(false);
+        startButton.SetActive(true);
     }
     public void GreenPlayerSelect()
     {
