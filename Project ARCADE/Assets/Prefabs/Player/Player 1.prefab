@@ -178,8 +178,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 2301967408342695997, guid: 8cf3287fbffcecc40b528722120d0cc2, type: 3}
+  redBullet: {fileID: 7863991768458290498}
   bulletSpawner: {fileID: 7346353963145987972}
-  playerTransform: {fileID: 0}
+  playerTransform: {fileID: 5509913189837678829}
   bulletR: 0
   fireRate: 1
   bulletDamage: 1
@@ -187,6 +188,8 @@ MonoBehaviour:
   multishoot: 1
   critRate: 0
   shootSound: {fileID: 728651101}
+  greenShoot: 0
+  redShoot: 0
 --- !u!114 &2064147424578589852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,6 +702,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a42973380c692d74f8edb0696b000608, type: 3}
+--- !u!1 &7863991768458290498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4664764257369484469, guid: a42973380c692d74f8edb0696b000608, type: 3}
+  m_PrefabInstance: {fileID: 3287083167650875895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8786629312422615820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6083923807071048443, guid: a42973380c692d74f8edb0696b000608, type: 3}

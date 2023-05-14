@@ -72,6 +72,7 @@ private void OnCollisionEnter(Collision other) {
     {
         boss1Defeated = true;
         yield return  new WaitForSeconds(0.5f);
+        GameSession.level = 2;
         Destroy(gameObject);
     }
 

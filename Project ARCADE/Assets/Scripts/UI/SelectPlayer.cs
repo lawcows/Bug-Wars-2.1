@@ -17,7 +17,7 @@ public class SelectPlayer : MonoBehaviour
         startButton.SetActive(true);
         if(nextSceneToLoad == null)
         {
-            nextSceneToLoad = "Level 1";
+            nextSceneToLoad = "Leve " + GameSession.level.ToString();
         }
     }
     public void GreenPlayerSelect()
@@ -47,6 +47,7 @@ public class SelectPlayer : MonoBehaviour
     IEnumerator StartGame()
     {
         yield return new WaitForSecondsRealtime(1);
+        nextSceneToLoad = "Level " + GameSession.level.ToString();
         SceneManager.LoadScene(nextSceneToLoad);
     }
 }
