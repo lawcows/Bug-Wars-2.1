@@ -14,26 +14,18 @@ public class Boss3 : MonoBehaviour
     Animator animator;
     public float bossHP = 100;
     public float firerate;
-    public bool shootLR;
-
-    public static bool boss1Defeated = false;
+    public static bool boss3Defeated = false;
     void Start()
     {
         animator = GetComponent<Animator>();
+        // Inicia sequencia para atacar
         StartCoroutine(Attack());
     }
     void Update()
-    {
-        if(shootLR)
-        {
-            ShootLR();
-            shootLR = false;
-        }
-    }
-
-
+    {    }
     private void OnCollisionEnter(Collision other)
     {
+        // recebeu dano
         GetHitted();
     }
     void GetHitted()
@@ -44,18 +36,20 @@ public class Boss3 : MonoBehaviour
         Destroy(tExplosion, 1);
         if (bossHP <= 0)
         {
-            boss1Defeated = true;
+            // Boss derrotado
+            boss3Defeated = true;
             GameSession.level = 2;
             Destroy(gameObject, 0.5f);
         }
     }
     IEnumerator ShootLR()
     {
+        // Inicia contagem para realizar ataques
         yield return new WaitForSecondsRealtime(3.5f);
-        for( int w = 0; w < 3; w++)
+        for( int w = 0; w < 3; w++) // Loop para realizar 03 sequências de atack
         {
             yield return new WaitForSecondsRealtime(w * 1.5f);
-            for (int i = 0; i < bulletSpawners.Length; i++)
+            for (int i = 0; i < bulletSpawners.Length; i++) // Loop para spawnar os tiros na sequência correta
             {
                 StartCoroutine(ShootUpTimer(i));
             }
@@ -65,12 +59,14 @@ public class Boss3 : MonoBehaviour
 
     IEnumerator ShootUpTimer(int i)
     {
+        // Timer entre cada tiro
         yield return new WaitForSecondsRealtime(i/2f);
         Instantiate(bulletPrefab, bulletSpawners[i].transform.position, Quaternion.identity);
     }
 
     IEnumerator Attack()
     {
+        // Inicia contagem para animação de ataque
         yield return new WaitForSecondsRealtime(10);
         animator.SetTrigger("Attack");
         StartCoroutine(ShootLR());
