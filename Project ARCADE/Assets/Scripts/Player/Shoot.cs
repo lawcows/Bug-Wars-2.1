@@ -47,13 +47,14 @@ public class Shoot: MonoBehaviour
 
 public void Update() 
 {
-    // Ativar o tiro verde
-    if(canfire && greenShoot)
-    StartCoroutine(GunShoot());
+        // Ativar o tiro verde
+        if (canfire && greenShoot) 
+            GunShoot();
+        
 }
 
 
-    IEnumerator GunShoot()
+    void GunShoot()
 {
     //Calcular se vai ser critico ou não
     int r = Random.Range(1,5);
@@ -84,11 +85,10 @@ public void Update()
             }
             StartCoroutine(FireRateHandler());
             shootSound.GetComponent<AudioSource>().Play();
-            yield return null;
     }
     IEnumerator FireRateHandler()
     {
-        float nextTimeToShoot = 1 / fireRate;
+        float nextTimeToShoot = (0.5f / fireRate) * multishoot;
         yield return new WaitForSecondsRealtime(nextTimeToShoot);
         canfire = true;
     }
