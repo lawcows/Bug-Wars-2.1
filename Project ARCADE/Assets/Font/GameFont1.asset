@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: GameFont1
   m_EditorClassIdentifier: 
-  hashCode: -1769686140
+  hashCode: 11489164
   material: {fileID: -8235472661990717681}
-  materialHashCode: -1053988956
+  materialHashCode: -225583444
   m_Version: 1.1.0
   m_SourceFontFileGUID: 59382bf0c7c946542a87b4a05b9fd157
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 59382bf0c7c946542a87b4a05b9fd157, type: 3}

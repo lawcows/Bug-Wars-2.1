@@ -14,13 +14,22 @@ public class Boss1 : MonoBehaviour
     Animator animator;
     public float bossHP = 20;
     public float firerate;
+    private GameObject bossHealthBar;
+    private GameObject[] bossHealthBarUnits;
+    private float maxHealth; 
     bool shooting = false;
 
     public static bool boss1Defeated = false;
     void Start()
     {
         StartCoroutine(Iddle());
+        maxHealth = bossHP;
         animator = GetComponent<Animator>();
+        GameObject gameSession = GameObject.Find("GameSession");
+        bossHealthBar = gameSession.GetComponent<GameSession>().bossHealthBar;
+        bossHealthBarUnits = gameSession.GetComponent<GameSession>().bossHealthBarUnits;
+
+        bossHealthBar.SetActive(true);
     }
     void Update()
     {
@@ -61,6 +70,16 @@ private void OnCollisionEnter(Collision other) {
     void GetHitted()
     {
         bossHP = bossHP - shoot.bulletDamage;
+
+        Debug.Log(bossHealthBarUnits.Length);
+        for (int i = 0; i < bossHealthBarUnits.Length; i++) {
+            // Debug.Log(bossHP/maxHealth);
+            // Debug.Log((i + 1)/bossHealthBarUnits.Length);
+            bool isActive = (bossHP/maxHealth) > (float)(bossHealthBarUnits.Length - i - 1)/(float)bossHealthBarUnits.Length;
+            // Debug.Log(isActive);
+            bossHealthBarUnits[i].SetActive(isActive);
+        }
+
         damageSE.GetComponent<AudioSource>().Play();
         ParticleSystem tExplosion = Instantiate(explosionPS, transform.position, Quaternion.identity);
         StartCoroutine(DestroyPS());
@@ -73,6 +92,7 @@ private void OnCollisionEnter(Collision other) {
         boss1Defeated = true;
         yield return  new WaitForSeconds(0.5f);
         GameSession.level = 2;
+        bossHealthBar.SetActive(false);
         Destroy(gameObject);
     }
 
