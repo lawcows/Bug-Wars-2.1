@@ -9,6 +9,7 @@ public class Waves : MonoBehaviour
 {
     public GameObject [] waves;
     public TextMeshProUGUI waveText;
+    public Animator waveAnimator;
     int waveIndex = 0;
     float [] spawnTime;
     public float time = 5;
@@ -25,6 +26,7 @@ public class Waves : MonoBehaviour
         waveIndex++;
         waves[waveIndex].SetActive(true);
         waveText.text = "Wave " + (waveIndex + 1).ToString();
+        waveAnimator.SetTrigger("alerta");
         waves[(waveIndex - 1)].SetActive(false);
         if(waveIndex < waves.Length)
         StartCoroutine(NextWave());

@@ -449,6 +449,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1638233229}
     - target: {fileID: 6256697127310710335, guid: 70276b9b6312c544e845e52287b70468, type: 3}
+      propertyPath: waveAnimator
+      value: 
+      objectReference: {fileID: 1782543185}
+    - target: {fileID: 6256697127310710335, guid: 70276b9b6312c544e845e52287b70468, type: 3}
       propertyPath: waves.Array.data[0]
       value: 
       objectReference: {fileID: 895590014}
@@ -6369,6 +6373,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8798680519363985384, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
+      propertyPath: m_text
+      value: Level 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
 --- !u!114 &1638233229 stripped
@@ -6453,6 +6461,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6256697126311206429, guid: 70276b9b6312c544e845e52287b70468, type: 3}
   m_PrefabInstance: {fileID: 175365611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1782543185 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2081663151, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
+  m_PrefabInstance: {fileID: 1638233228}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1873483131 stripped
 MonoBehaviour:
