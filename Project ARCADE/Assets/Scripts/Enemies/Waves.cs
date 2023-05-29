@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Waves : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class Waves : MonoBehaviour
     IEnumerator NextWave()
     {
         yield return new WaitForSecondsRealtime(time);
-        if(waveIndex < waves.Length)
+        if(waveIndex < waves.Length - 1)
         {
         waveIndex++;
         waves[waveIndex].SetActive(true);
@@ -32,6 +33,11 @@ public class Waves : MonoBehaviour
         waves[(waveIndex - 1)].SetActive(false);
         StartCoroutine(NextWave());
         }
+        
+        else{
+            SceneManager.LoadScene("Creditsfinale");
+        }
+        
     }
 
     private void Update() {
