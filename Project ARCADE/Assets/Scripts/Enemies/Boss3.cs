@@ -18,6 +18,7 @@ public class Boss3 : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        bulletSpawners = GameObject.FindGameObjectsWithTag("bbp");
         // Inicia sequencia para atacar
         StartCoroutine(Attack());
     }
@@ -38,7 +39,7 @@ public class Boss3 : MonoBehaviour
         {
             // Boss derrotado
             boss3Defeated = true;
-            GameSession.level = 2;
+            GameSession.level = 3;
             Destroy(gameObject, 0.5f);
         }
     }
@@ -46,10 +47,10 @@ public class Boss3 : MonoBehaviour
     {
         // Inicia contagem para realizar ataques
         yield return new WaitForSecondsRealtime(3.5f);
-        for( int w = 0; w < 3; w++) // Loop para realizar 03 sequências de atack
+        for( int w = 0; w < 3; w++) // Loop para realizar 03 sequï¿½ncias de atack
         {
             yield return new WaitForSecondsRealtime(w * 1.5f);
-            for (int i = 0; i < bulletSpawners.Length; i++) // Loop para spawnar os tiros na sequência correta
+            for (int i = 0; i < bulletSpawners.Length; i++) // Loop para spawnar os tiros na sequï¿½ncia correta
             {
                 StartCoroutine(ShootUpTimer(i));
             }
@@ -66,7 +67,7 @@ public class Boss3 : MonoBehaviour
 
     IEnumerator Attack()
     {
-        // Inicia contagem para animação de ataque
+        // Inicia contagem para animaï¿½ï¿½o de ataque
         yield return new WaitForSecondsRealtime(10);
         animator.SetTrigger("Attack");
         StartCoroutine(ShootLR());

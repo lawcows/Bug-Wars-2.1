@@ -23,13 +23,15 @@ public class Waves : MonoBehaviour
     IEnumerator NextWave()
     {
         yield return new WaitForSecondsRealtime(time);
+        if(waveIndex < waves.Length)
+        {
         waveIndex++;
         waves[waveIndex].SetActive(true);
         waveText.text = "Wave " + (waveIndex + 1).ToString();
         waveAnimator.SetTrigger("alerta");
         waves[(waveIndex - 1)].SetActive(false);
-        if(waveIndex < waves.Length)
         StartCoroutine(NextWave());
+        }
     }
 
     private void Update() {
