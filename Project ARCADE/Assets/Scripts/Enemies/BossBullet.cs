@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class BossBullet : MonoBehaviour
 {
-    public GameObject boss;
+    public Transform boss;
     Vector3 direction;
     Rigidbody rb;
     public float speed;
     private void Start() {
         direction = (transform.position - boss.transform.position).normalized;
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(direction * -speed);
+        rb.AddForce(direction * speed);
         Destroy(gameObject, 5);
     }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - checkpoint
   - bbp
+  - boss
   layers:
   - Default
   - TransparentFX
