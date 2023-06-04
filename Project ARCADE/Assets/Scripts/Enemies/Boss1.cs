@@ -71,18 +71,13 @@ private void OnCollisionEnter(Collision other) {
     {
         bossHP = bossHP - shoot.bulletDamage;
 
-        Debug.Log(bossHealthBarUnits.Length);
         for (int i = 0; i < bossHealthBarUnits.Length; i++) {
-            // Debug.Log(bossHP/maxHealth);
-            // Debug.Log((i + 1)/bossHealthBarUnits.Length);
             bool isActive = (bossHP/maxHealth) > (float)(bossHealthBarUnits.Length - i - 1)/(float)bossHealthBarUnits.Length;
-            // Debug.Log(isActive);
             bossHealthBarUnits[i].SetActive(isActive);
         }
-
         damageSE.GetComponent<AudioSource>().Play();
         ParticleSystem tExplosion = Instantiate(explosionPS, transform.position, Quaternion.identity);
-        StartCoroutine(DestroyPS());
+        Destroy(tExplosion, 1);
         if(bossHP <= 0)
         {
         StartCoroutine(Die());
@@ -95,11 +90,5 @@ private void OnCollisionEnter(Collision other) {
         bossHealthBar.SetActive(false);
         Destroy(gameObject);
     }
-
-    IEnumerator DestroyPS()
-        {
-            yield return new WaitForSecondsRealtime(1);
-            Destroy(tExplosion);
-        }
 }
 }

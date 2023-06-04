@@ -9,7 +9,7 @@ public class BossBullet : MonoBehaviour
     Rigidbody rb;
     public float speed;
     private void Start() {
-        direction = (transform.position - boss.transform.position).normalized;
+        direction = (transform.position - new Vector3(13,0,0)).normalized;
         rb = GetComponent<Rigidbody>();
         rb.AddForce(direction * speed);
         Destroy(gameObject, 5);
