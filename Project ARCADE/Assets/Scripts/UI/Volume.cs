@@ -3,28 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Volume : MonoBehaviour
 {
-[SerializeField] AudioListener audioListener;
-[SerializeField] GameObject volumeON;
-[SerializeField] GameObject volumeOff;
-    void Start()
-    {
-    volumeON.SetActive(true);
-    volumeOff.SetActive(false);
-    }
+[SerializeField] AudioMixer audioMixer;
+public Slider volumeSlider;
 
-public void VolumeOff()
-{
-    audioListener.enabled = false;
-    volumeON.SetActive(false);
-    volumeOff.SetActive(true);
+private void Start() {
 }
-public void VolumeOn()
+public void VolumeChange()
 {
-    audioListener.enabled = true;
-    volumeON.SetActive(true);
-    volumeOff.SetActive(false);
+    audioMixer.SetFloat("Volume", volumeSlider.value);
 }
 }
