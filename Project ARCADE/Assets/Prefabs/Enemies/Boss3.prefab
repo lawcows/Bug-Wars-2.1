@@ -63,7 +63,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8533030449555409205, guid: b5223d5fbba14ec49825ed499f2d88ea, type: 3}
-  bulletSpawners: []
+  bulletSpawners:
+  - {fileID: 6809216934416728777, guid: 4342527db8770b045ad0536176053f9b, type: 3}
+  - {fileID: 5961964994584546717, guid: 514ad90bea99ad74895c411f88c36129, type: 3}
+  - {fileID: 1777002943990385092, guid: 3ae0738280f64d04689da951b880db48, type: 3}
+  - {fileID: 1627825948543291209, guid: 57c3bc5e8ba98d0448a5ac1749cb2e10, type: 3}
+  - {fileID: 1056969911300836396, guid: ff9a22e76fc5d0f4f9d672179e8f2f00, type: 3}
+  - {fileID: 7730400396936009833, guid: 4659180b32a73944f8a9f594f76b27ca, type: 3}
+  - {fileID: 8579312912712492150, guid: 8edd9a2ccae090443a3c0d1834136b86, type: 3}
+  - {fileID: 6561197417423826049, guid: 452a372b8396ac34589c672407e4defb, type: 3}
+  - {fileID: 8753770995169765286, guid: f13afb329f9672f4c8836e9394284777, type: 3}
   damageSE: {fileID: 46177429428002770}
   explosionPS: {fileID: 2147072013540284581, guid: 3c580356b9725424da5283ec837b6f2f, type: 3}
   shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}

@@ -162,6 +162,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: bbp
       objectReference: {fileID: 0}
+    - target: {fileID: 6256697126932585449, guid: 70276b9b6312c544e845e52287b70468, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6256697127310710328, guid: 70276b9b6312c544e845e52287b70468, type: 3}
       propertyPath: m_Name
       value: WaveManager2
