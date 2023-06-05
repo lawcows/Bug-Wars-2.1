@@ -14,7 +14,6 @@ private void Start() {
 private void OnTriggerEnter(Collider other) {
     if(!used)
     {
-    Debug.Log("ouch");
     shoot.fireRate++;
     used = true;
     Destroy(gameObject);

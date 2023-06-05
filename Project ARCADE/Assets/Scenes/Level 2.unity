@@ -5777,7 +5777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2392695450270158105, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
       propertyPath: gameSceneName
-      value: Level 3
+      value: Creditsfinale
       objectReference: {fileID: 0}
     - target: {fileID: 2392695450270158105, guid: ae4d619fb5b544e49b82de718b99f30f, type: 3}
       propertyPath: playerSelectionSceneName

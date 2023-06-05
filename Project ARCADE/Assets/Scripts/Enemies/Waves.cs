@@ -32,12 +32,7 @@ public class Waves : MonoBehaviour
         waveAnimator.SetTrigger("alerta");
         waves[(waveIndex - 1)].SetActive(false);
         StartCoroutine(NextWave());
-        }
-        
-        else{
-            SceneManager.LoadScene("Creditsfinale");
-        }
-        
+        }        
     }
 
     private void Update() {

@@ -73,8 +73,6 @@ private void Start() {
         int p = Random.Range(0, powerUpGO.Length);
         if(r % dropRate == 0)
             {
-                Debug.Log("R = " + r);
-                Debug.Log("Instanciado o " + powerUpGO[p]);
                 Instantiate(powerUpGO[p], gameObject.transform.position, Quaternion.identity);
             }
         Destroy(gameObject);
