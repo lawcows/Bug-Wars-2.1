@@ -8,8 +8,11 @@ public class MShootPowerUp : MonoBehaviour
     bool used = false;
 private void Start() {
     shoot = GameObject.Find("Player").GetComponent<Shoot>();
+    if(shoot.multishoot >= 3)
+    {
+        Destroy(gameObject);
+    }
 }
-
 
 private void OnTriggerEnter(Collider other) {
     if(!used)

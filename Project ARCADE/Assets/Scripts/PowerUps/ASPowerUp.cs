@@ -8,6 +8,10 @@ public class ASPowerUp : MonoBehaviour
     bool used = false;
 private void Start() {
     shoot = GameObject.Find("Player").GetComponent<Shoot>();
+    if(shoot.fireRate >= 3)
+    {
+        Destroy(gameObject);
+    }
 }
 
 

@@ -70,9 +70,9 @@ public void Update()
                 fireRate = 3;
             }
             // limitador de multishoot
-            if (multishoot >= 4)
+            if (multishoot >= 3)
             {
-                multishoot = 4;
+                multishoot = 3;
             }
             //Multishoot
             else if(multishoot>1 ){

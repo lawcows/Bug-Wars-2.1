@@ -695,7 +695,7 @@ PrefabInstance:
       objectReference: {fileID: 998205290}
     - target: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: redShoot
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: redBullet
@@ -703,7 +703,7 @@ PrefabInstance:
       objectReference: {fileID: 425036191}
     - target: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: greenShoot
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2064147424578589852, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: movementBounds

@@ -135,7 +135,6 @@ private void Start() {
         GameObject bullet = Instantiate(enemyBullet, eBulletSpawner.transform.position, enemyBullet.transform.rotation) as GameObject;
         Vector3 forceVector = eBulletSpawner.transform.forward * force;
         forceVector = Quaternion.AngleAxis(angle, Vector3.up) * forceVector;
-
         bullet.GetComponent<Rigidbody>().AddForce(forceVector);
         Destroy(bullet, 50);
     }
