@@ -7,6 +7,8 @@ TagManager:
   - checkpoint
   - bbp
   - boss
+  - postprocessing
+  - music
   layers:
   - Default
   - TransparentFX

@@ -17,9 +17,16 @@ private void Start() {
 private void OnTriggerEnter(Collider other) {
     if(!used)
     {
-    Debug.Log("ouch");
-    shoot.multishoot++;
-    Destroy(gameObject);
+        shoot.multishoot++;
+        if(shoot.multishoot == 2)
+        {
+        shoot.SecondRedShoot();
+        }  
+        else if(shoot.multishoot == 3)
+        {
+            shoot.ThirdRedShoot();
+        }
+        Destroy(gameObject);
     }
 }
 }

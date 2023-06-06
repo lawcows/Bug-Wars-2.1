@@ -125,7 +125,7 @@ MonoBehaviour:
   eBulletSpawner: {fileID: 5335844378371074798}
   shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
   tripleBullet: 0
-  dropRate: 15
+  dropRate: 7
 --- !u!82 &-4814188366021267119
 AudioSource:
   m_ObjectHideFlags: 0

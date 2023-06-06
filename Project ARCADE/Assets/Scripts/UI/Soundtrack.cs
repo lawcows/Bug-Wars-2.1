@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Soundtrack : MonoBehaviour
 {
-    public AudioSource soundtrack;
-
-    private void Start() {
-        soundtrack.GetComponent<AudioSource>().Play();   
+private void Awake() {
+    GameObject [] music = GameObject.FindGameObjectsWithTag("music");
+    if(music.Length > 1)
+    {
+        Destroy(this.gameObject);
     }
+    DontDestroyOnLoad(this.gameObject);
+}
+
+
 }

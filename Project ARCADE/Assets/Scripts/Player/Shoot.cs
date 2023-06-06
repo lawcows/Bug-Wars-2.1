@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shoot: MonoBehaviour
 {
     [SerializeField] GameObject bullet;
-    [SerializeField] GameObject redBullet;
+    [SerializeField] GameObject [] redBullet;
     [SerializeField] Transform bulletSpawner;
     float nextTimeToShoot;
     public float fireRate = 1;
@@ -36,18 +36,17 @@ public class Shoot: MonoBehaviour
         // Ativar o tiro vermelho 
         if (redShoot)
         {
-            redBullet.SetActive(true);
+            redBullet[0].SetActive(true);
         }
         else
-            redBullet.SetActive(false);
+            redBullet[0].SetActive(false);
     }
 
 public void Update() 
 {
         // Ativar o tiro verde
         if (canfire && greenShoot) 
-            GunShoot();
-        
+            GunShoot();        
 }
 
 
@@ -100,5 +99,13 @@ public void Update()
             temporaryBallRB.AddForce(bulletSpawner.transform.forward);   
             Destroy(temporaryBall, 5f);
         }
+    }
+    public void SecondRedShoot()
+    {
+        redBullet[1].SetActive(true);
+    }
+    public void ThirdRedShoot()
+    {
+        redBullet[2].SetActive(true);
     }
 }

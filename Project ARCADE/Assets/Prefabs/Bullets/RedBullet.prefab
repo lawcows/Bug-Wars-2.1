@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4752371658262483088}
   - component: {fileID: 1564219757242218590}
   - component: {fileID: 5173292739724387476}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Corpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 9170043453385085235}
   - component: {fileID: 960586002761992459}
   - component: {fileID: 8179698258412325552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Icosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3053181342784189481}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PV_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 4089529142748767675}
   - component: {fileID: 1419608832582253676}
   - component: {fileID: 5338845305963219655}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Armadura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 6083923807071048443}
   - component: {fileID: 1235111549090467717}
   - component: {fileID: -9103621339218015887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RedBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,6 +349,7 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   radius: 5
   bulletSpeed: 3
+  bulletIndex: 0
 --- !u!1 &5415582908904825694
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +361,7 @@ GameObject:
   - component: {fileID: 645170866513067944}
   - component: {fileID: 7989650250652526473}
   - component: {fileID: 482543122143679868}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Olho_direito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +444,7 @@ GameObject:
   - component: {fileID: 1215115528103806771}
   - component: {fileID: 7394667460529808771}
   - component: {fileID: 4942744104952258007}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Olho_esquerdo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4849607196427365760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +558,7 @@ GameObject:
   - component: {fileID: 4536299895433136766}
   - component: {fileID: 7499310957952952412}
   - component: {fileID: 8858893188396823209}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bico_armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
