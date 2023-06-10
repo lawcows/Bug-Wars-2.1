@@ -80,15 +80,11 @@ private void OnCollisionEnter(Collision other) {
         Destroy(tExplosion, 1);
         if(bossHP <= 0)
         {
-        StartCoroutine(Die());
-        }
-    IEnumerator Die()
-    {
         boss1Defeated = true;
-        yield return  new WaitForSeconds(0.5f);
         GameSession.level = 2;
         bossHealthBar.SetActive(false);
-        Destroy(gameObject);
-    }
+        Destroy(gameObject, 0.5f);
+        }
+
 }
 }

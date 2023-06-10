@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &52491368
 RectTransform:
   m_ObjectHideFlags: 0
@@ -757,6 +757,7 @@ MonoBehaviour:
   startButton: {fileID: 1140043958}
   gPButton: {fileID: 1140043958}
   rPButton: {fileID: 1390525739}
+  fPButton: {fileID: 52491367}
   choseYourBug: {fileID: 1150302654}
 --- !u!1 &579268820
 GameObject:

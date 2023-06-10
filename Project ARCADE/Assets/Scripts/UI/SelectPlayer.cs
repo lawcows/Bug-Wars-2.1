@@ -9,7 +9,7 @@ public class SelectPlayer : MonoBehaviour
     public static bool redPlayerSelected = false;
     public static bool greenPlayerSelected = false;
     public static bool fusionPlayerSelected = false;
-    public GameObject startButton, gPButton, rPButton;
+    public GameObject startButton, gPButton, rPButton, fPButton;
     public TextMeshProUGUI choseYourBug;
     string nextSceneToLoad;
 
@@ -17,7 +17,11 @@ public class SelectPlayer : MonoBehaviour
         startButton.SetActive(true);
         if(nextSceneToLoad == null)
         {
-            nextSceneToLoad = "Leve " + GameSession.level.ToString();
+            nextSceneToLoad = "Level " + GameSession.level.ToString();
+        }
+        if (GameSession.level > 2)
+        {
+            fPButton.SetActive(true);
         }
     }
     public void GreenPlayerSelect()

@@ -4,21 +4,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Boss3 : MonoBehaviour
+public class Boss2 : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public GameObject[] bulletSpawners;
     public AudioSource damageSE;
     public ParticleSystem explosionPS;
+    private GameObject bossHealthBar;
+    private GameObject[] bossHealthBarUnits;
+    private float maxHealth;
     public Shoot shoot;
     Animator animator;
     public float bossHP = 100;
     public float firerate;
-    public static bool boss3Defeated = false;
+    public static bool boss2Defeated = false;
     void Start()
     {
         animator = GetComponent<Animator>();
         bulletSpawners = GameObject.FindGameObjectsWithTag("bbp");
+        GameObject gameSession = GameObject.Find("GameSession");
+        bossHealthBar = gameSession.GetComponent<GameSession>().bossHealthBar;
+        bossHealthBarUnits = gameSession.GetComponent<GameSession>().bossHealthBarUnits;
+        bossHealthBar.SetActive(true);
         // Inicia sequencia para atacar
         StartCoroutine(Attack());
     }
@@ -35,10 +42,14 @@ public class Boss3 : MonoBehaviour
         damageSE.GetComponent<AudioSource>().Play();
         ParticleSystem tExplosion = Instantiate(explosionPS, transform.position, Quaternion.identity);
         Destroy(tExplosion, 1);
+        for (int i = 0; i < bossHealthBarUnits.Length; i++) {
+        bool isActive = (bossHP/maxHealth) > (float)(bossHealthBarUnits.Length - i - 1)/(float)bossHealthBarUnits.Length;
+        bossHealthBarUnits[i].SetActive(isActive);
+        }
         if (bossHP <= 0)
         {
             // Boss derrotado
-            boss3Defeated = true;
+            boss2Defeated = true;
             GameSession.level = 3;
             Destroy(gameObject, 0.5f);
         }

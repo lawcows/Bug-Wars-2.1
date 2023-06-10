@@ -26,6 +26,15 @@ public class PauseMenu : MonoBehaviour
         {
             winScreen.SetActive(true);
         }
+        else if(Boss2.boss2Defeated)
+        {
+            winScreen.SetActive(true);
+        }
+        else if(Boss33.boss33Defeated)
+        {
+            winScreen.SetActive(true);
+        }
+        
     }
 
     //Retorna ao jogo    

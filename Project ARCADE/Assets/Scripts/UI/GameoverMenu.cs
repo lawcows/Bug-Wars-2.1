@@ -30,6 +30,8 @@ public class GameoverMenu : MonoBehaviour
         SceneManager.LoadScene(playerSelectionSceneName);
         Time.timeScale = 1;
         Boss1.boss1Defeated = false;
+        Boss2.boss2Defeated = false;
+        Boss33.boss33Defeated = false;
     }
 
 }
