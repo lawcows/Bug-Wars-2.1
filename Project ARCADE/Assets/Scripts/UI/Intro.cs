@@ -10,12 +10,10 @@ public class Intro : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
-        StartCoroutine(ChageToMenu());
     }
 
-    IEnumerator ChageToMenu()
+public void MenuScene()
     {
-        yield return new WaitForSecondsRealtime(3.5f);
         SceneManager.LoadScene("Menu");
     }
 }
