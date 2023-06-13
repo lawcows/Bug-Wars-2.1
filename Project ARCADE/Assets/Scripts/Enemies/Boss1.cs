@@ -13,16 +13,13 @@ public class Boss1 : MonoBehaviour
     public Shoot shoot;
     Animator animator;
     public float bossHP = 20;
-    public float firerate;
     private GameObject bossHealthBar;
     private GameObject[] bossHealthBarUnits;
     private float maxHealth; 
-    bool shooting = false;
 
     public static bool boss1Defeated = false;
     void Start()
     {
-        StartCoroutine(Iddle());
         maxHealth = bossHP;
         animator = GetComponent<Animator>();
         GameObject gameSession = GameObject.Find("GameSession");
@@ -34,34 +31,13 @@ public class Boss1 : MonoBehaviour
     void Update()
     {
 
-    }
-
-    IEnumerator Iddle()
+    }   
+    public void Shoot()
     {
-       yield return new WaitForSecondsRealtime(4);
-       animator.SetBool("Attack", true);
-       StartCoroutine(BulletHell());
-    }
-
-    IEnumerator BulletHell()
-    {
-        yield return new WaitForSecondsRealtime(5);
-        animator.SetBool("Attack", false);
-        if(!shooting) 
-        {
-            StartCoroutine(Shoot());
-        }
-    }        
-    IEnumerator Shoot()
-    {
-        shooting = true;
-        yield return new WaitForSecondsRealtime(1/firerate);
-
             for(int i = 0; i< bulletSpawners.Length; i++)
             {
             Instantiate(bulletPrefab, bulletSpawners[i].transform.position, Quaternion.identity);
-            }
-            StartCoroutine(Shoot());       
+            }      
     }
 
 private void OnCollisionEnter(Collision other) {
