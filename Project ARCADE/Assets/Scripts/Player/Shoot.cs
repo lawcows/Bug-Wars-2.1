@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shoot: MonoBehaviour
 {
-    [SerializeField] GameObject bullet;
+    [SerializeField] GameObject bullet, greenPlayer, redPlayer, fusionPlayer;
     [SerializeField] GameObject [] redBullet;
     [SerializeField] Transform bulletSpawner;
     float nextTimeToShoot;
@@ -40,6 +40,27 @@ public class Shoot: MonoBehaviour
         }
         else
             redBullet[0].SetActive(false);
+
+        // Selecionar personagem
+
+        if(SelectPlayer.greenPlayerSelected)
+        {
+        greenPlayer.SetActive(true);
+        redPlayer.SetActive(false);
+        fusionPlayer.SetActive(false);
+        }
+        else if (SelectPlayer.redPlayerSelected)
+        {
+        greenPlayer.SetActive(false);
+        redPlayer.SetActive(true);
+        fusionPlayer.SetActive(false);
+        }
+        else if(SelectPlayer.fusionPlayerSelected)
+        {
+        greenPlayer.SetActive(false);
+        redPlayer.SetActive(false);
+        fusionPlayer.SetActive(true);
+        }
     }
 
 public void Update() 

@@ -18,15 +18,16 @@ private void OnTriggerEnter(Collider other) {
     if(!used)
     {
         shoot.multishoot++;
-        if(shoot.multishoot == 2)
+        if(shoot.multishoot == 2 && !SelectPlayer.greenPlayerSelected)
         {
         shoot.SecondRedShoot();
         }  
-        else if(shoot.multishoot == 3)
+        else if(shoot.multishoot == 3 && !SelectPlayer.greenPlayerSelected)
         {
             shoot.ThirdRedShoot();
         }
         Destroy(gameObject);
+        used = true;
     }
 }
 }
