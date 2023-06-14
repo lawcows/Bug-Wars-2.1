@@ -106,7 +106,7 @@ public void Update()
         }
         IEnumerator FireRateHandler()
         {
-            float nextTimeToShoot = (0.5f / fireRate) * multishoot;
+            float nextTimeToShoot = (0.5f / fireRate);
             yield return new WaitForSecondsRealtime(nextTimeToShoot);
             canfire = true;
         }
