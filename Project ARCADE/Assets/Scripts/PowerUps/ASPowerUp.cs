@@ -7,7 +7,9 @@ public class ASPowerUp : MonoBehaviour
     Shoot shoot;
     rBullet [] redBullet;
     bool used = false;
-private void Start() {
+    public AudioSource collectSound;
+    private void Start() 
+    {
     shoot = GameObject.Find("Player").GetComponent<Shoot>();
     redBullet = GameObject.Find("Player").GetComponentsInChildren<rBullet>();
     if(shoot.fireRate >= 3)
@@ -33,7 +35,10 @@ private void OnTriggerEnter(Collider other) {
             }
         }
     used = true;
-    Destroy(gameObject);
+    collectSound.GetComponent<AudioSource>().Play();
+    gameObject.GetComponent<MeshRenderer>().enabled = false;
+    gameObject.GetComponent<BoxCollider>().enabled = false;
+    Destroy(gameObject, 3);
     }
 
 }

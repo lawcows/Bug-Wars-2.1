@@ -6,7 +6,8 @@ public class MShootPowerUp : MonoBehaviour
 {
     Shoot shoot;
     bool used = false;
-private void Start() {
+    public AudioSource collectSound;
+    private void Start() {
     shoot = GameObject.Find("Player").GetComponent<Shoot>();
     if(shoot.multishoot >= 3)
     {
@@ -26,7 +27,10 @@ private void OnTriggerEnter(Collider other) {
         {
             shoot.ThirdRedShoot();
         }
-        Destroy(gameObject);
+        collectSound.GetComponent<AudioSource>().Play();
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+        Destroy(gameObject, 3);
         used = true;
     }
 }
