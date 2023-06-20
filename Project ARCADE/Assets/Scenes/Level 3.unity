@@ -725,11 +725,11 @@ PrefabInstance:
       objectReference: {fileID: 450078370}
     - target: {fileID: 3186120924709617798, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: radius
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4239778071183267401, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: radius
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5406185527719768384, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: m_Name
@@ -785,7 +785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8285764101573946699, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: radius
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}

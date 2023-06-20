@@ -167,7 +167,7 @@ PrefabInstance:
       objectReference: {fileID: 2137718166}
     - target: {fileID: 6256697126311206429, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6256697126523644134, guid: 910a548db694d5847a7ca073c684e57d, type: 3}
       propertyPath: spawnPoints.Array.size
@@ -731,7 +731,7 @@ PrefabInstance:
       objectReference: {fileID: 998205290}
     - target: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: redShoot
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: redBullet
@@ -739,15 +739,23 @@ PrefabInstance:
       objectReference: {fileID: 425036191}
     - target: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: greenShoot
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2064147424578589852, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: movementBounds
       value: 
       objectReference: {fileID: 450078370}
+    - target: {fileID: 3186120924709617798, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      propertyPath: radius
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3740538885817714831, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239778071183267401, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      propertyPath: radius
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5406185527719768384, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: m_Name
@@ -804,6 +812,10 @@ PrefabInstance:
     - target: {fileID: 7863991768458290498, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285764101573946699, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
+      propertyPath: radius
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8918065634300031885, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
       propertyPath: m_IsActive

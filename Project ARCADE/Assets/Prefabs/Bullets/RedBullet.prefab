@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  radius: 5
+  radius: 8
   bulletSpeed: 3
   bulletIndex: 0
 --- !u!1 &5415582908904825694
