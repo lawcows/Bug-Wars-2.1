@@ -20435,7 +20435,7 @@ GameObject:
   - component: {fileID: 9202380679275799035}
   m_Layer: 8
   m_Name: BOSS1
-  m_TagString: Untagged
+  m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20497,7 +20497,6 @@ MonoBehaviour:
   explosionPS: {fileID: 2147072013540284581, guid: 3c580356b9725424da5283ec837b6f2f, type: 3}
   shoot: {fileID: 681109401767115579, guid: 5d40e18fcdcbc0e4fa5a6c6086a1e069, type: 3}
   bossHP: 100
-  firerate: 5
 --- !u!82 &-4648392686983783321
 AudioSource:
   m_ObjectHideFlags: 0
